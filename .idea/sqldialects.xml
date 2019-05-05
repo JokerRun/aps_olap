@@ -3,5 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/1.biz_doc/APS接口视图.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.2.load_stage_item.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/1.fact_inventory_daily_snapshot.sql" dialect="MySQL" />
   </component>
 </project>
