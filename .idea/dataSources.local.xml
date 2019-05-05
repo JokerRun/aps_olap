@@ -21,5 +21,35 @@
       <user-name>root</user-name>
       <introspection-schemas>*:dm_aps,raw_data_vault,stage_area</introspection-schemas>
     </data-source>
+    <data-source name="APS_DV@121.199.48.53" uuid="8e15b0ed-4e60-4883-997a-75d5b7b8b15c">
+      <database-info product="MySQL" version="5.7.23-0ubuntu0.18.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="5.7.23" exact-driver-version="5.1">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:dm_aps,dw_raw,ods_erp,stage_area</introspection-schemas>
+    </data-source>
+    <data-source name="mysql@192.168.0.222" uuid="5c3e2010-e16f-41ef-bf23-cef9c1eb6150">
+      <database-info product="MySQL" version="5.7.24" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="5.7.24" exact-driver-version="5.1">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:*</introspection-schemas>
+    </data-source>
+    <data-source name="Datavault@gateway002" uuid="a228a951-6e99-4569-b0ad-74b00024e068">
+      <database-info product="Microsoft SQL Server" version="14.00.3038" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.2 for SQL Server" driver-version="7.2.1.0" dbms="MSSQL" exact-version="14.0.3038" exact-driver-version="7.2">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>DataVault:biz,log,raw|FlightInformationMart:@|MDS:INFORMATION_SCHEMA,dbo,dqs,mdm,mdq,stg,usr|StageArea:@,bts,dbo,mds,my</introspection-schemas>
+    </data-source>
   </component>
 </project>

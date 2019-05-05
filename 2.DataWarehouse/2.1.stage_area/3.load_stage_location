@@ -1,0 +1,25 @@
+set @loaddate = '2019-05-03';
+replace into stage_area.stage_erp_location
+select md5(nr)                                                          as h_location_hk,
+       date_format(@loaddate, '%Y-%m-%d')                               as load_date,
+       'erp.wctz.locationview'                                          as record_source,
+       md5(CONCAT_WS(',', nr, lft, rght, lvl, source, lastmodified, created_at, updated_at, id, name, area, category,
+                     subcategory, description, available_id, owner_id)) as location_hash_diff,
+       nr                                                               as location_nr,
+       lft,
+       rght,
+       lvl,
+       source,
+       lastmodified,
+       created_at,
+       updated_at,
+       name,
+       area,
+       category,
+       subcategory,
+       description,
+       available_id,
+       owner_id,
+       null as company,
+       null as type
+from ods_erp.LOCATIONVIEW

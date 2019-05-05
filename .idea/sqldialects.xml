@@ -2,5 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/1.biz_doc/APS接口视图.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" dialect="MySQL" />
   </component>
 </project>
