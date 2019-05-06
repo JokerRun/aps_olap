@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243e2c8e-f6d0-4ccc-90b0-4edaba474057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.1.create_stage_item.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.2.load_stage_item.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.1.create_stage_location.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.2.load_stage_location.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/4.1.create_stage_inventory.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/4.2.load_stage_inventory.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.2.create_dw_raw_sat.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bcfe623-a779-48ea-a968-76ce9b0c478f/storage_v2/_src_/schema/apqp.jsotAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bcfe623-a779-48ea-a968-76ce9b0c478f/storage_v2/_src_/schema/apqp.jsotAA.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/storage_v2/_src_/schema/dm_aps.bknRsA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/storage_v2/_src_/schema/dm_aps.bknRsA.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.biz_doc/fact table_source.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/1.biz_doc/fact table_source.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/APS接口视图.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/1.create_stage_area.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/1.dump_stage_area.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.load_stage_item" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.load_stage_location" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/4.load_stage_inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.create_dw_raw" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.1.dump_dw_raw.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.load_dw_raw" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.load_dw_raw.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/2.dim_item.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/2.dim_item.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_location.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_location.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/1.fact_inventory_daily_snapshot" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/1.fact_inventory_daily_snapshot.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,44 +38,160 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dw_raw: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dw_raw: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dw_raw: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="h_sat_item: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dw_raw: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="l_sat_inventory: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="ods_erp: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dw_raw: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="ods_erp: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="link_inventory: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ods_erp: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="TLF_FILE: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_4.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="612" lean-forward="true" selection-start-line="334" selection-end-line="612" />
+              <folding>
+                <element signature="e#0#574#0" />
+                <element signature="e#53#574#0" />
+                <element signature="e#577#1241#0" />
+                <element signature="e#1243#1820#0" />
+                <element signature="e#1290#1820#0" />
+                <element signature="e#1823#2272#0" />
+                <element signature="e#1870#2272#0" />
+                <element signature="e#2317#6748#0" />
+                <element signature="e#6752#7237#0" />
+                <element signature="e#6798#7237#0" />
+                <element signature="e#7239#7661#0" />
+                <element signature="e#7291#7661#0" />
+                <element signature="e#7665#9338#0" />
+                <element signature="e#7793#9338#0" />
+                <element signature="e#9355#10564#0" />
+                <element signature="e#9406#10564#0" />
+                <element signature="e#10567#11034#0" />
+                <element signature="e#10618#11034#0" />
+                <element signature="n#INVENTORYVIEW#0" />
+                <element signature="n#FORECASTVERSIONVIEW#0" />
+                <element signature="e#16752#16884#0" />
+                <element signature="e#16507#17044#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="e#1#666#0" />
+                <element signature="e#49#566#0" />
+                <element signature="e#670#5141#0" />
+                <element signature="e#712#5143#0" />
+                <element signature="e#9077#9547#0" />
+                <element signature="e#9077#9467#0" />
+                <element signature="e#9552#10241#0" />
+                <element signature="e#9608#10051#0" />
+                <element signature="e#10246#10725#0" />
+                <element signature="e#10199#10511#0" />
+                <element signature="e#10730#11818#0" />
+                <element signature="e#10632#11334#0" />
+                <element signature="e#11823#12390#0" />
+                <element signature="e#11466#11856#0" />
+                <element signature="e#12390#13063#0" />
+                <element signature="e#12010#12479#0" />
+                <element signature="e#13063#13581#0" />
+                <element signature="e#12606#12957#0" />
+                <element signature="n#demand_order_item_view#0" />
+                <element signature="e#13069#13485#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_5.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="21" column="32" lean-forward="true" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-636">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1.biz_doc/APS接口视图.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="495" column="14" lean-forward="true" selection-start-line="342" selection-end-line="495" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/TLF_FILE">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -110,6 +206,8 @@
       <find>''</find>
       <find>'2019-04-04 15:56:57.0'</find>
       <find>/</find>
+      <find>來源</find>
+      <find>--</find>
     </findStrings>
     <replaceStrings>
       <replace>dm_aps.dim_date</replace>
@@ -119,6 +217,8 @@
       <replace>null</replace>
       <replace>DATE_FORMAT(@loaddate,'%Y-%m-%d')</replace>
       <replace>, --</replace>
+      <replace>目的</replace>
+      <replace>--</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -164,7 +264,6 @@
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.2.load_stage_item.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.load_stage_location.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.1.create_stage_location.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/4.load_stage_inventory.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.2.create_dw_raw_sat.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_1.sql" />
@@ -174,13 +273,17 @@
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/2.dim_item.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_location.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/1.fact_inventory_daily_snapshot.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_5.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
+    <option name="y" value="20" />
     <option name="width" value="1440" />
-    <option name="height" value="834" />
+    <option name="height" value="835" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -200,6 +303,11 @@
             <path>
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
               <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
+              <item name="1.biz_doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
               <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,23 +318,18 @@
             </path>
             <path>
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="2.3.DataMart" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="2.3.DataMart" type="462c0819:PsiDirectoryNode" />
-              <item name="2.1.dimensions" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
             <path>
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="2.3.DataMart" type="462c0819:PsiDirectoryNode" />
-              <item name="2.2.facts" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="8e15b0ed-4e60-4883-997a-75d5b7b8b15c" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
@@ -272,8 +375,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Database" order="0" visible="true" weight="0.29060403" />
+      <window_info content_ui="combo" id="Database" order="0" visible="true" weight="0.22147651" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -286,75 +390,11 @@
       <window_info active="true" anchor="bottom" id="Database Console" order="8" sideWeight="0.4985694" visible="true" weight="0.37075332" />
       <window_info anchor="bottom" id="Debug" order="9" />
       <window_info anchor="bottom" id="SQL Generator" order="10" weight="0.32928476" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.49295774" visible="true" weight="0.147651" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.5070422" side_tool="true" visible="true" weight="0.147651" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.49061033" visible="true" weight="0.19395973" />
+      <window_info anchor="right" id="Structure" order="1" sideWeight="0.5093897" side_tool="true" visible="true" weight="0.19395973" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/stage_area/table/stage_erp_location">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/ods_erp/view/INVENTORYVIEW">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/img_pk.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="15" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/ods_erp/table/IMG_FILE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="IMG01=40100200001" />
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console_7.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console_6.sql" />
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dw_raw/table/hub_item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dw_raw/table/h_sat_location">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dw_raw/table/h_sat_item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dw_raw/table/h_sat_inventory">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -455,13 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/APS接口视图.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/APS接口视图.sql" />
     <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/IMA_FILE">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
@@ -671,24 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="302" column="38" selection-start-line="302" selection-start-column="35" selection-end-line="302" selection-end-column="38" />
-          <folding>
-            <element signature="e#53#574#0" />
-            <element signature="e#1243#1820#0" />
-            <element signature="e#1823#2272#0" />
-            <element signature="e#2274#6748#0" />
-            <element signature="e#6752#7237#0" />
-            <element signature="e#7239#7661#0" />
-            <element signature="n#INVENTORYMOVEMENTVIEW#0" />
-            <element signature="n#FORECASTVERSIONVIEW#0" />
-            <element signature="n#FORECASTVIEW#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dw_raw/table/h_sat_item">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
@@ -702,6 +718,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/view/ITEMLOCATIONVIEW">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/view/fact_inventory_daily_snapshot_view">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.biz_doc/APS接口视图.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="495" column="14" lean-forward="true" selection-start-line="342" selection-end-line="495" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="612" lean-forward="true" selection-start-line="334" selection-end-line="612" />
+          <folding>
+            <element signature="e#0#574#0" />
+            <element signature="e#53#574#0" />
+            <element signature="e#577#1241#0" />
+            <element signature="e#1243#1820#0" />
+            <element signature="e#1290#1820#0" />
+            <element signature="e#1823#2272#0" />
+            <element signature="e#1870#2272#0" />
+            <element signature="e#2317#6748#0" />
+            <element signature="e#6752#7237#0" />
+            <element signature="e#6798#7237#0" />
+            <element signature="e#7239#7661#0" />
+            <element signature="e#7291#7661#0" />
+            <element signature="e#7665#9338#0" />
+            <element signature="e#7793#9338#0" />
+            <element signature="e#9355#10564#0" />
+            <element signature="e#9406#10564#0" />
+            <element signature="e#10567#11034#0" />
+            <element signature="e#10618#11034#0" />
+            <element signature="n#INVENTORYVIEW#0" />
+            <element signature="n#FORECASTVERSIONVIEW#0" />
+            <element signature="e#16752#16884#0" />
+            <element signature="e#16507#17044#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#1#666#0" />
+            <element signature="e#49#566#0" />
+            <element signature="e#670#5141#0" />
+            <element signature="e#712#5143#0" />
+            <element signature="e#9077#9547#0" />
+            <element signature="e#9077#9467#0" />
+            <element signature="e#9552#10241#0" />
+            <element signature="e#9608#10051#0" />
+            <element signature="e#10246#10725#0" />
+            <element signature="e#10199#10511#0" />
+            <element signature="e#10730#11818#0" />
+            <element signature="e#10632#11334#0" />
+            <element signature="e#11823#12390#0" />
+            <element signature="e#11466#11856#0" />
+            <element signature="e#12390#13063#0" />
+            <element signature="e#12010#12479#0" />
+            <element signature="e#13063#13581#0" />
+            <element signature="e#12606#12957#0" />
+            <element signature="n#demand_order_item_view#0" />
+            <element signature="e#13069#13485#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/TLF_FILE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="32" lean-forward="true" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-636">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
