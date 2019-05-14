@@ -1,0 +1,20 @@
+{
+  "mode": "explore",
+  "drilldown": [
+    "operate_type",
+    "movedate@daily:year"
+  ],
+  "cuts": [
+    {
+      "dimension": "operate_type",
+      "value": "outbound",
+      "invert": null
+    }
+  ],
+  "datefilters": [],
+  "columnHide": {},
+  "columnWidths": {},
+  "columnSort": {},
+  "cubename": "inventory_movement",
+  "name": "inventory_movement_years_movement"
+}

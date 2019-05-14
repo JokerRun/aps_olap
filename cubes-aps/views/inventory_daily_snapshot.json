@@ -1,0 +1,13 @@
+{
+  "mode": "explore",
+  "drilldown": [
+    "dulldate@daily:year"
+  ],
+  "cuts": [],
+  "datefilters": [],
+  "columnHide": {},
+  "columnWidths": {},
+  "columnSort": {},
+  "cubename": "inventory_daily_snapshot",
+  "name": "inventory_daily_snapshot"
+}

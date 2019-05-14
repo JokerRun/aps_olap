@@ -1,64 +1,88 @@
 {
+    "name": "inventory_movement",
     "dimensions": [
-        "snapshotdate", 
-        "dulldate", 
-        "item", 
-        "location"
-    ], 
+        "item",
+        "location",
+        "inventory_doc",
+        "movedate",
+        "operate_type"
+    ],
+    "joins": [
+        {
+            "master": "h_item_hk",
+            "detail": "dim_item.h_item_hk"
+        },
+        {
+            "master": "h_location_hk",
+            "detail": "dim_location.h_location_hk"
+        },
+        {
+            "master": "h_inventory_doc_hk",
+            "detail": "dim_inventory_doc.h_inventory_doc_hk"
+        },
+        {
+            "master": "move_date_key",
+            "detail": "dim_date.date_key",
+			"alias":"dim_movedate"
+        },
+        {
+            "master": "operate_type",
+            "detail": "dim_operate_type.operate_type"
+        }
+    ],
     "measures": [
         {
-            "name": "onhand"
+            "name": "move_count"
         },
 		{
-            "name": "unit_price"
+            "name": "inventory_affected_count"
         },
 		{
-            "name": "onhand_value"
+            "name": "inventory_affected_amount"
         }
     ], 
     "aggregates": [
         {
-            "name": "total_onhand",
-            "label": "Onhand amount",
-            "measure": "onhand",
+            "name": "sum_move_count",
+            "label": "Sum Move Count",
+            "measure": "move_count",
             "function": "sum"
         },
         {
-            "name": "average_onhand",
-            "label": "Avg amount",
-            "measure": "onhand",
+            "name": "average_move_count",
+            "label": "Avg Move Count",
+            "measure": "move_count",
             "function": "avg"
         }
     ],
-    "name": "inventory_daily_snapshot", 
     "details": [
         {
-            "name": "available", 
-            "label": "Available"
+            "name": "describsion",
+            "label": "Describsion"
         }, 
         {
-            "name": "mrp_available", 
-            "label": "Mrp available"
-        }
-    ], 
-    "joins": [
+            "name": "movement_department",
+            "label": "Order Department"
+        },
         {
-            "master": "location_key", 
-            "detail": "dim_location.h_location_hk"
-        }, 
+            "name": "reason_code",
+            "label": "reason_code"
+        },
         {
-            "master": "item_key", 
-            "detail": "dim_item.h_item_hk"
-        }, 
+            "name": "movement_org",
+            "label": "movement_org"
+        },
         {
-            "master": "date_key", 
-            "detail": "dim_date.date_key",
-			"alias":"dim_snapshotdate"
-        }, 
+            "name": "movement_unit",
+            "label": "movement_unit"
+        },
         {
-            "master": "dull_date_key", 
-            "detail": "dim_date.date_key",
-			"alias":"dim_dulldate"
+            "name": "unit_price",
+            "label": "unit_price"
+        },
+        {
+            "name": "operate_type",
+            "label": "operate_type"
         }
     ]
 }

@@ -1,0 +1,33 @@
+{
+    "hierarchies": [
+        {
+            "levels": [
+                "location"
+            ], 
+            "name": "default"
+        }
+    ], 
+    "levels": [
+        {
+            "attributes": [
+                {
+                    "name": "h_location_hk"
+                }, 
+                {
+                    "name": "location_nr", 
+                    "label": "location_nr"
+                }, 
+                {
+                    "name": "name", 
+                    "label": "location name"
+                }
+            ], 
+            "order_attribute": "h_location_hk", 
+            "label_attribute": "name", 
+            "name": "location", 
+            "key": "h_location_hk"
+        }
+    ], 
+    "name": "location", 
+    "label": "location"
+}

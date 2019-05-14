@@ -1,0 +1,56 @@
+{
+    "name": "inventory_doc",
+    "label": "Inventory Order",
+    "levels": [
+        {
+            "name": "h_inventory_doc_hk",
+			"label":"Inventory Order Key",
+            "key": "h_inventory_doc_hk",
+            "attributes": [
+                {
+                    "name": "h_inventory_doc_hk"
+                }
+            ]
+        },
+		{
+            "name": "inventory_doc_nr",
+            "key": "inventory_doc_nr",
+			"label":"Inventory Order Number",
+            "attributes": [
+                {
+                    "name": "inventory_doc_nr",
+                    "label": "Inventory Order Number"
+                }
+            ]
+
+        },
+		{
+            "name": "inventory_doc_line",
+			"label":"Inventory Order Line Number",
+            "key": "inventory_doc_line",
+            "attributes": [
+                {
+                    "name": "inventory_doc_line",
+                    "label": "Inventory Order Line Number"
+                }
+            ]
+        },
+		{
+            "name": "operate_type",
+			"label":"Inventory Movement Type",
+            "key": "operate_type",
+            "attributes": [
+                {
+                    "name": "operate_type",
+                    "label": "Movement Type"
+                }
+            ]
+        }
+	],
+	"hierarchies": [
+		{
+			"name": "default",
+			"levels": ["operate_type","inventory_doc_nr", "inventory_doc_line"]
+		}
+	]
+}

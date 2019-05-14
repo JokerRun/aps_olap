@@ -1,0 +1,5 @@
+create table dm_aps.dim_operate_type as
+select 'outbound' as operate_key, 'outbound' as operate_type
+from dual
+;
+insert dm_aps.dim_operate_type values ('inbound','inbound');

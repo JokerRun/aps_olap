@@ -2198,7 +2198,7 @@ BMD03</ColNames>
     </column>
     <column id="497" parent="43" name="TA_IMA14">
       <Position>322</Position>
-      <Comment>ECU Manufacturing Date </Comment>
+      <Comment>ECU Manufacturing Date</Comment>
       <DataType>VARCHAR2(40 byte)|0s</DataType>
     </column>
     <column id="498" parent="43" name="TA_IMA15">

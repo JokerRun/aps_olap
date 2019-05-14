@@ -1,0 +1,64 @@
+{
+    "dimensions": [
+        "snapshotdate", 
+        "dulldate", 
+        "item", 
+        "location"
+    ], 
+    "measures": [
+        {
+            "name": "onhand"
+        },
+		{
+            "name": "unit_price"
+        },
+		{
+            "name": "onhand_value"
+        }
+    ], 
+    "aggregates": [
+        {
+            "name": "total_onhand",
+            "label": "Onhand amount",
+            "measure": "onhand",
+            "function": "sum"
+        },
+        {
+            "name": "average_onhand",
+            "label": "Avg amount",
+            "measure": "onhand",
+            "function": "avg"
+        }
+    ],
+    "name": "inventory_daily_snapshot", 
+    "details": [
+        {
+            "name": "available", 
+            "label": "Available"
+        }, 
+        {
+            "name": "mrp_available", 
+            "label": "Mrp available"
+        }
+    ], 
+    "joins": [
+        {
+            "master": "location_key", 
+            "detail": "dim_location.h_location_hk"
+        }, 
+        {
+            "master": "item_key", 
+            "detail": "dim_item.h_item_hk"
+        }, 
+        {
+            "master": "date_key", 
+            "detail": "dim_date.date_key",
+			"alias":"dim_snapshotdate"
+        }, 
+        {
+            "master": "dull_date_key", 
+            "detail": "dim_date.date_key",
+			"alias":"dim_dulldate"
+        }
+    ]
+}

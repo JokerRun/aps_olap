@@ -1,0 +1,20 @@
+<Schema name="dm_aps">
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Item">
+    <Hierarchy visible="true" hasAll="true" primaryKey="l_item_hk">
+      <Table name="dim_item">
+      </Table>
+      <Level name="ItemType" visible="true" table="dim_item" column="type" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Inventorysnapshot" visible="true" cache="true" enabled="true">
+    <Table name="fact_inventory_daily_snapshot">
+    </Table>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="item_key" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Onhand" column="onhand" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Onhand Value" column="onhand_value" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

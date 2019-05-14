@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243e2c8e-f6d0-4ccc-90b0-4edaba474057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/4.dim_operate_type" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.1.improve performence.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mondrian/FoodMart.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mondrian/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mondrian/SteelWheels.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mondrian/mondrian.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cubes-aps/CubesViewer.itmz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_operate_type.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cubes-aps/views/inventory_daily_snapshot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cubes-aps/views/inventory_movement_years_outbound.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/696d41fc-a9c4-4bbd-ab4b-34673ce822e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/696d41fc-a9c4-4bbd-ab4b-34673ce822e7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/storage_v2/_src_/schema/dm_aps.bknRsA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/storage_v2/_src_/schema/dm_aps.bknRsA.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_desc.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_desc.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.0.biz_analize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.0.biz_analize.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.1.create_stage_inventory_movement.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.1.create_stage_inventory_movement.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.2.load_stage_inventory_movement" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.2.load_stage_inventory_movement" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/1.create_raw_dw.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/1.create_raw_dw.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/2.load_raw_dw.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/2.load_raw_dw.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_inventory_doc.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_inventory_doc.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.fact_inventory_movement.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.fact_inventory_movement.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/cube_inventory_movement.json" beforeDir="false" afterPath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/cube_inventory_movement.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_docdate.json" beforeDir="false" afterPath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_docdate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_inventory_doc.json" beforeDir="false" afterPath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_inventory_doc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_movedate.json" beforeDir="false" afterPath="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_movedate.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,169 +46,33 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ods_erp: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ods_erp: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ods_erp: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="TLF_FILE: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_4.sql">
+        <entry file="file://$PROJECT_DIR$/Mondrian/FoodMart.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="612" lean-forward="true" selection-start-line="334" selection-end-line="612" />
+            <state relative-caret-position="209">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
-                <element signature="e#0#574#0" />
-                <element signature="e#53#574#0" />
-                <element signature="e#577#1241#0" />
-                <element signature="e#1243#1820#0" />
-                <element signature="e#1290#1820#0" />
-                <element signature="e#1823#2272#0" />
-                <element signature="e#1870#2272#0" />
-                <element signature="e#2317#6748#0" />
-                <element signature="e#6752#7237#0" />
-                <element signature="e#6798#7237#0" />
-                <element signature="e#7239#7661#0" />
-                <element signature="e#7291#7661#0" />
-                <element signature="e#7665#9338#0" />
-                <element signature="e#7793#9338#0" />
-                <element signature="e#9355#10564#0" />
-                <element signature="e#9406#10564#0" />
-                <element signature="e#10567#11034#0" />
-                <element signature="e#10618#11034#0" />
-                <element signature="n#INVENTORYVIEW#0" />
-                <element signature="n#FORECASTVERSIONVIEW#0" />
-                <element signature="e#16752#16884#0" />
-                <element signature="e#16507#17044#0" />
+                <element signature="e#17495#17501#0" expanded="true" />
+                <element signature="e#17516#17522#0" expanded="true" />
+                <element signature="e#17525#17531#0" expanded="true" />
+                <element signature="e#17550#17556#0" expanded="true" />
+                <element signature="e#17557#17563#0" expanded="true" />
+                <element signature="e#17577#17583#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-              <folding>
-                <element signature="e#1#666#0" />
-                <element signature="e#49#566#0" />
-                <element signature="e#670#5141#0" />
-                <element signature="e#712#5143#0" />
-                <element signature="e#9077#9547#0" />
-                <element signature="e#9077#9467#0" />
-                <element signature="e#9552#10241#0" />
-                <element signature="e#9608#10051#0" />
-                <element signature="e#10246#10725#0" />
-                <element signature="e#10199#10511#0" />
-                <element signature="e#10730#11818#0" />
-                <element signature="e#10632#11334#0" />
-                <element signature="e#11823#12390#0" />
-                <element signature="e#11466#11856#0" />
-                <element signature="e#12390#13063#0" />
-                <element signature="e#12010#12479#0" />
-                <element signature="e#13063#13581#0" />
-                <element signature="e#12606#12957#0" />
-                <element signature="n#demand_order_item_view#0" />
-                <element signature="e#13069#13485#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_5.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="21" column="32" lean-forward="true" selection-end-line="67" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql">
+        <entry file="file://$PROJECT_DIR$/Mondrian/foodmart4.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-636">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.biz_doc/APS接口视图.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="495" column="14" lean-forward="true" selection-start-line="342" selection-end-line="495" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/TLF_FILE">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
-              <filtering>
-                <filter text="" />
-              </filtering>
+            <state relative-caret-position="-415">
+              <caret line="436" column="18" lean-forward="true" selection-start-line="436" selection-start-column="18" selection-end-line="436" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -208,6 +94,14 @@
       <find>/</find>
       <find>來源</find>
       <find>--</find>
+      <find>儲存發生異動的</find>
+      <find>stage_inventory_movement</find>
+      <find>operate_doc</find>
+      <find>operation_doc</find>
+      <find>l_inventory_movement_sat</find>
+      <find>operate_key</find>
+      <find>operate_type</find>
+      <find>snowflake</find>
     </findStrings>
     <replaceStrings>
       <replace>dm_aps.dim_date</replace>
@@ -219,6 +113,10 @@
       <replace>, --</replace>
       <replace>目的</replace>
       <replace>--</replace>
+      <replace>stage_area.stage_inventory_movement</replace>
+      <replace>inventory_doc</replace>
+      <replace>l_sat_inventory_movement</replace>
+      <replace>mysql</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -227,31 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/696d41fc-a9c4-4bbd-ab4b-34673ce822e7/console_1.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/696d41fc-a9c4-4bbd-ab4b-34673ce822e7/console_6.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/696d41fc-a9c4-4bbd-ab4b-34673ce822e7/console_7.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/696d41fc-a9c4-4bbd-ab4b-34673ce822e7/console.sql" />
-        <option value="$USER_HOME$/AppData/Roaming/Foxmail7/Temp-14424-20190426100621/Attach/APS接口视图.sql" />
-        <option value="$PROJECT_DIR$/1.biz_doc/APS接口视图.sql" />
-        <option value="$PROJECT_DIR$/9.database/dm_aps.sql" />
-        <option value="$PROJECT_DIR$/999.Reference/create&amp;load dm_aps.sql" />
-        <option value="$PROJECT_DIR$/2.DataMart/2.1.dimensions/1.dim_date.sql" />
-        <option value="$PROJECT_DIR$/2.DataMart/2.1.dimensions/2.dim_item.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/create&amp;load dm_aps.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/create&amp;load aps_raw_data_vault.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/stage_area.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/stage_area.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/create&amp;load aps_raw_data_vault.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.load_stage_item" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.load_stage_location" />
-        <option value="$PROJECT_DIR$/3.DataMart/dm_aps.sql" />
-        <option value="$PROJECT_DIR$/3.DataMart/2.1.dimensions/2.dim_item.sql" />
-        <option value="$PROJECT_DIR$/3.DataMart/2.1.dimensions/3.dim_location" />
-        <option value="$PROJECT_DIR$/3.DataMart/2.1.dimensions/3.dim_location.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.load_stage_item" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console_3.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console_4.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console_5.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.load_stage_location" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/img_pk.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console_6.sql" />
@@ -275,12 +148,38 @@
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/1.fact_inventory_daily_snapshot.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_5.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_5.sql" />
+        <option value="$PROJECT_DIR$/cubes-aps/README.md" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.create_stage_inventory_movement.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.0.biz_analize.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_desc.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/2.load_raw_dw.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_7.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.1.create_stage_inventory_movement.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.2.load_stage_inventory_movement" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/1.create_raw_dw.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_inventory_doc.sql" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_movedate.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_docdate.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_inventory_doc.json" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.fact_inventory_movement.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.1.improve performence.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/4.dim_operate_type" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_item.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/slicer.ini" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_dulldate.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_snapshotdate.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/cube_inventory_movement.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_operate_type.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/views/inventory_movement_years_outbound.json" />
+        <option value="$PROJECT_DIR$/cubes-aps/views/inventory_daily_snapshot.json" />
+        <option value="$PROJECT_DIR$/Mondrian/Readme.md" />
+        <option value="$PROJECT_DIR$/Mondrian/FoodMart.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="20" />
     <option name="width" value="1440" />
     <option name="height" value="835" />
@@ -293,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,39 +203,12 @@
             <path>
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
               <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="1.biz_doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="2.0.ods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="8e15b0ed-4e60-4883-997a-75d5b7b8b15c" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="Mondrian" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,22 +216,23 @@
     <property name="DatabaseDriversLRU" value="oracle&#10;mysql&#10;sqlserver" />
     <property name="GoToClass.toSaveIncludeLibraries" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/2.DataWarehouse/2.0.ods" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mondrian" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\DatagripProjects\aps_olap\2.DataWarehouse\2.2.dw_raw" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\2.DataWarehouse\2.2.dw_raw\2.2.1.inventory" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\2.DataWarehouse\2.2.dw_raw\dump" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\2.DataWarehouse\2.2.dw_raw\tmp" />
+      <recent name="$PROJECT_DIR$/2.DataWarehouse" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\DatagripProjects\aps_olap\Mondrian" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\cubes-aps" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\cubes-aps\procurements.cubesmodel" />
       <recent name="$PROJECT_DIR$/2.DataWarehouse/2.0.ods" />
       <recent name="$PROJECT_DIR$/2.DataMart/2.1.dimensions" />
-      <recent name="D:\Git\DatagripProjects\aps_olap\1.biz_doc" />
-      <recent name="D:\Git\DatagripProjects\aps_olap\1.biz_doc\aps_model" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/2.DataWarehouse" />
-      <recent name="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw" />
-      <recent name="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area" />
-      <recent name="$PROJECT_DIR$/3.DataMart" />
-      <recent name="$PROJECT_DIR$/2.DataMart/dimensions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -374,7 +248,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Database" order="0" visible="true" weight="0.22147651" />
@@ -385,256 +259,91 @@
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50143063" side_tool="true" weight="0.96385545" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5026846" side_tool="true" weight="0.22895126" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3308715" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="8" sideWeight="0.4985694" visible="true" weight="0.37075332" />
+      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.49731544" visible="true" weight="0.22895126" />
       <window_info anchor="bottom" id="Debug" order="9" />
       <window_info anchor="bottom" id="SQL Generator" order="10" weight="0.32928476" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.49061033" visible="true" weight="0.19395973" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.5093897" side_tool="true" visible="true" weight="0.19395973" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.09386973" visible="true" weight="0.42885906" />
+      <window_info active="true" anchor="right" id="Structure" order="1" sideWeight="0.90613025" side_tool="true" visible="true" weight="0.42885906" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dw_raw/table/h_sat_inventory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dw_raw/table/hub_location">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/table/dim_date">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/view/dim_location_view">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/view/dim_item_view">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dw_raw/table/l_sat_inventory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/view/fact_inventory_daily_snapshot_view">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/table/dim_location">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/table/aps_inventory_snapshot">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console.sql" />
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/table/fact_inventory_daily_snapshot">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c3e2010-e16f-41ef-bf23-cef9c1eb6150/schema/dm_aps/table/dim_item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/APS接口视图.sql" />
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/IMA_FILE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/view/ITEMVIEW">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.1.create_stage_item.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_6.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" column="10" lean-forward="true" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+        <state relative-caret-position="209">
+          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/1.dump_stage_area.sql">
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.location+item+inventory/1.create_dw_raw_sat.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1501">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="345">
+          <caret line="132" column="33" lean-forward="true" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/IMD_FILE">
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.location+item+inventory/2.load_dw_raw.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="160" column="11" selection-start-line="160" selection-start-column="7" selection-end-line="160" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/stage_area/table/stage_inventory_movement">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/view/LOCATIONVIEW">
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dw_raw/table/inventory_movement_link">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/stage_area/table/stage_erp_location">
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dw_raw/table/link_inventory_movement">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.1.create_stage_location.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.2.load_stage_item.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/3.2.load_stage_location.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/IMG_FILE">
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dw_raw/table/l_sat_inventory_movement">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.1.dump_dw_raw.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_7.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1621">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="247">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/raw_data_vault.sql">
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.1.create_stage_inventory_movement.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/create&amp;load aps_raw_data_vault.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4293" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.2.create_dw_raw_sat.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="137" column="30" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="137" selection-end-column="30" />
-          <folding>
-            <element signature="e#120#1069#0" />
-            <element signature="e#1064#1172#0" />
-            <element signature="e#1302#2993#0" />
-            <element signature="e#2980#3080#0" />
-            <element signature="e#4108#4219#0" />
-            <element signature="e#4428#4466#1" />
-            <element signature="e#4468#4504#1" />
-            <element signature="e#4506#4546#1" />
-            <element signature="e#4548#4590#1" />
-            <element signature="e#4592#4634#1" />
-            <element signature="e#4636#4679#1" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="175" column="30" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_1.sql">
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/5.2.load_stage_inventory_movement">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/stage_area/table/stage_erp_inventory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
-          <filtering>
-            <filter text="" />
-          </filtering>
+        <state relative-caret-position="191">
+          <caret line="172" column="1" lean-forward="true" selection-end-line="172" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -645,201 +354,269 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/stage_area/table/stage_erp_item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/SQL-Insert-Statements.sql.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/4.1.create_stage_inventory.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/JSON-Groovy.json.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/HTML-JavaScript.html.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/HTML-Groovy.html.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
+        <state relative-caret-position="-454" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/4.2.load_stage_inventory.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/XML-Groovy.xml.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="17" column="20" lean-forward="true" selection-end-line="31" selection-end-column="27" />
-        </state>
+        <state relative-caret-position="-1176" />
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dw_raw/table/link_inventory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.load_dw_raw.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema.layouts/File per object.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
+        <state relative-caret-position="-93" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema.layouts/File per object with order.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/1.create_raw_dw.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="59" column="15" lean-forward="true" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/2.dim_item.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="65" column="26" selection-end-line="65" selection-end-column="26" />
+        <state relative-caret-position="298">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_location.sql">
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.inventory_movement/2.load_raw_dw.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="220">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/1.dim_date.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/view/dim_inventory_doc_view">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
     <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dw_raw/table/h_sat_item">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="da67a244-3bc1-49cd-b90f-ea7186135160">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
           <filtering>
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/view/fact_inventory_movement_view">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/3.dim_inventory_doc.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/1.fact_inventory_daily_snapshot.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="76">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/view/ITEMLOCATIONVIEW">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/table/fact_inventory_movement">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
+        <state projectRestartId="f0f1c2d5-9e43-4892-92c6-0c7ade1fe08f">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_3.sql">
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.fact_inventory_movement.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+        <state relative-caret-position="282">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_4.sql">
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.1.improve performence.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="353">
+          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/view/fact_inventory_daily_snapshot_view">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
-          <filtering>
-            <filter text="" />
-          </filtering>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.1.dimensions/4.dim_operate_type">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.biz_doc/APS接口视图.sql">
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/model.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/slicer.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="495" column="14" lean-forward="true" selection-start-line="342" selection-end-line="495" selection-end-column="14" />
+        <state relative-caret-position="290">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/views_for_aps.sql">
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/cube_inventory_daily_snapshot.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_location.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_item.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="612" lean-forward="true" selection-start-line="334" selection-end-line="612" />
+        <state relative-caret-position="57">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_inventory_doc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_docdate.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="28" />
           <folding>
-            <element signature="e#0#574#0" />
-            <element signature="e#53#574#0" />
-            <element signature="e#577#1241#0" />
-            <element signature="e#1243#1820#0" />
-            <element signature="e#1290#1820#0" />
-            <element signature="e#1823#2272#0" />
-            <element signature="e#1870#2272#0" />
-            <element signature="e#2317#6748#0" />
-            <element signature="e#6752#7237#0" />
-            <element signature="e#6798#7237#0" />
-            <element signature="e#7239#7661#0" />
-            <element signature="e#7291#7661#0" />
-            <element signature="e#7665#9338#0" />
-            <element signature="e#7793#9338#0" />
-            <element signature="e#9355#10564#0" />
-            <element signature="e#9406#10564#0" />
-            <element signature="e#10567#11034#0" />
-            <element signature="e#10618#11034#0" />
-            <element signature="n#INVENTORYVIEW#0" />
-            <element signature="n#FORECASTVERSIONVIEW#0" />
-            <element signature="e#16752#16884#0" />
-            <element signature="e#16507#17044#0" />
+            <element signature="e#29#579#0" />
+            <element signature="n#!!block;n#info#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/2.views_for_fact_inventory_moving.sql">
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_dulldate.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_movedate.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding>
-            <element signature="e#1#666#0" />
-            <element signature="e#49#566#0" />
-            <element signature="e#670#5141#0" />
-            <element signature="e#712#5143#0" />
-            <element signature="e#9077#9547#0" />
-            <element signature="e#9077#9467#0" />
-            <element signature="e#9552#10241#0" />
-            <element signature="e#9608#10051#0" />
-            <element signature="e#10246#10725#0" />
-            <element signature="e#10199#10511#0" />
-            <element signature="e#10730#11818#0" />
-            <element signature="e#10632#11334#0" />
-            <element signature="e#11823#12390#0" />
-            <element signature="e#11466#11856#0" />
-            <element signature="e#12390#13063#0" />
-            <element signature="e#12010#12479#0" />
-            <element signature="e#13063#13581#0" />
-            <element signature="e#12606#12957#0" />
-            <element signature="n#demand_order_item_view#0" />
-            <element signature="e#13069#13485#0" />
+            <element signature="n#!!block;n#info#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/ods_erp/table/TLF_FILE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="47266394-7f65-4c74-a6ee-3577f9504224">
-          <filtering>
-            <filter text="" />
-          </filtering>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_snapshotdate.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e15b0ed-4e60-4883-997a-75d5b7b8b15c/console_5.sql">
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/dim_operate_type.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="32" lean-forward="true" selection-end-line="67" />
+        <state relative-caret-position="133">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.0.ods/test.sql">
+    <entry file="file://$PROJECT_DIR$/cubes-aps/views/inventory_movement_years_outbound.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-636">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="19">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/views/inventory_daily_snapshot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cubes-aps/procurements.cubesmodel/cube_inventory_movement.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/mondrian.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/FoodMart.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#17495#17501#0" expanded="true" />
+            <element signature="e#17516#17522#0" expanded="true" />
+            <element signature="e#17525#17531#0" expanded="true" />
+            <element signature="e#17550#17556#0" expanded="true" />
+            <element signature="e#17557#17563#0" expanded="true" />
+            <element signature="e#17577#17583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/foodmart4.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415">
+          <caret line="436" column="18" lean-forward="true" selection-start-line="436" selection-start-column="18" selection-end-line="436" selection-end-column="18" />
         </state>
       </provider>
     </entry>

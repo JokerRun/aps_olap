@@ -1,0 +1,16 @@
+{
+    "name": "operate_type",
+    "label": "Inventory Operate Type",
+    "levels": [
+        {
+            "name": "operate_type",
+			"label":"Inventory Operate Type",
+            "key": "operate_type",
+            "attributes": [
+                {
+                    "name": "operate_type"
+                }
+            ]
+        }
+	]
+}

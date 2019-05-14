@@ -1,0 +1,78 @@
+{
+    "name": "item", 
+    "label": "Item",
+    "levels": [
+        {
+            "name": "item", 
+			"label":"item_name",
+            "key": "h_item_hk",
+			"order_attribute": "h_item_hk", 
+            "label_attribute": "name", 
+            "attributes": [
+                {
+                    "name": "h_item_hk"
+                },
+                {
+                    "name": "name", 
+                    "label": "Item Name"
+                },
+                {
+                    "name": "item_nr",
+                    "label": "item_nr"
+                },
+                {
+                    "name": "project_nr", 
+                    "label": "Item Spec"
+                }, 
+                {
+                    "name": "mpq", 
+                    "label": "Item Mpq"
+                }
+            ]
+        },
+		{
+            "name": "price_abc", 
+            "key": "price_abc",
+			"label":"price_abc",
+            "attributes": [
+                {
+                    "name": "price_abc", 
+                    "label": "Item Price ABC"
+                }
+            ]
+            
+        },
+		{
+            "name": "item_type", 
+			"label":"item_type",
+            "key": "type",
+            "attributes": [
+                {
+                    "name": "type", 
+                    "label": "Item Type"
+                }
+            ]
+        },
+		{
+            "name": "item_src_type", 
+			"label":"item_src_type",
+            "key": "lym",
+            "attributes": [
+                {
+                    "name": "lym", 
+                    "label": "Item Src Type"
+                }
+            ]
+        }
+	],
+	"hierarchies": [
+		{
+			"name": "default",
+			"levels": ["price_abc", "item"]
+		},
+		{
+			"name": "ymd",
+			"levels": ["item_type", "item_src_type", "item"]
+		}
+	]
+}

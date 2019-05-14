@@ -23,7 +23,7 @@
                 "cv-datefilter": true, 
                 "cv-datefilter-hierarchy": "daily"
             }, 
-            "label": "Inventory Move Date",
+            "label": "Inventory Move Order Date",
             "levels": [
                 {
                     "attributes": [
@@ -76,6 +76,6 @@
                     "role": "day"
                 }
             ], 
-            "name": "movedate",
+            "name": "docdate",
             "role": "time"
         }

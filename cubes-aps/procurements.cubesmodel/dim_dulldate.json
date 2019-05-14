@@ -1,0 +1,81 @@
+{
+            "hierarchies": [
+                {
+                    "label": "Daily", 
+                    "levels": [
+                        "year", 
+                        "quarter", 
+                        "month", 
+                        "day"
+                    ], 
+                    "name": "daily"
+                }, 
+                {
+                    "label": "Weekly", 
+                    "levels": [
+                        "year", 
+                        "week"
+                    ], 
+                    "name": "weekly"
+                }
+            ], 
+            "info": {
+                "cv-datefilter": true, 
+                "cv-datefilter-hierarchy": "daily"
+            }, 
+            "label": "Dull Date", 
+            "levels": [
+                {
+                    "attributes": [
+                        "year"
+                    ], 
+                    "key": "year", 
+                    "label": "Year", 
+                    "label_attribute": "year", 
+                    "name": "year", 
+                    "role": "year"
+                }, 
+                {
+                    "attributes": [
+                        "quarter"
+                    ], 
+                    "key": "quarter", 
+                    "label": "Quarter", 
+                    "label_attribute": "quarter", 
+                    "name": "quarter", 
+                    "role": "quarter"
+                }, 
+                {
+                    "attributes": [
+                        "month"
+                    ], 
+                    "key": "month", 
+                    "label": "Month", 
+                    "label_attribute": "month", 
+                    "name": "month", 
+                    "role": "month"
+                }, 
+                {
+                    "attributes": [
+                        "week"
+                    ], 
+                    "key": "week", 
+                    "label": "Week", 
+                    "label_attribute": "week", 
+                    "name": "week", 
+                    "role": "week"
+                }, 
+                {
+                    "attributes": [
+                        "day"
+                    ], 
+                    "key": "day", 
+                    "label": "Day", 
+                    "label_attribute": "day", 
+                    "name": "day", 
+                    "role": "day"
+                }
+            ], 
+            "name": "dulldate", 
+            "role": "time"
+        }
