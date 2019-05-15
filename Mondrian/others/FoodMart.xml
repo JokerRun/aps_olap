@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Schema name="FoodMart">
+<Schema name="FoodMart" metamodelVersion='3.4.2'>
 <!--
   == This software is subject to the terms of the Eclipse Public License v1.0
   == Agreement, available at the following URL:

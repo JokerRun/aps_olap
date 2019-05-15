@@ -1,20 +1,107 @@
-<Schema name="dm_aps">
-  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Item">
-    <Hierarchy visible="true" hasAll="true" primaryKey="l_item_hk">
-      <Table name="dim_item">
-      </Table>
-      <Level name="ItemType" visible="true" table="dim_item" column="type" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
-      </Level>
-    </Hierarchy>
-  </Dimension>
-  <Cube name="Inventorysnapshot" visible="true" cache="true" enabled="true">
-    <Table name="fact_inventory_daily_snapshot">
-    </Table>
-    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="item_key" highCardinality="false">
-    </DimensionUsage>
-    <Measure name="Onhand" column="onhand" aggregator="sum" visible="true">
-    </Measure>
-    <Measure name="Onhand Value" column="onhand_value" aggregator="sum" visible="true">
-    </Measure>
-  </Cube>
+<?xml version='1.0'?>
+<Schema name='aps' metamodelVersion='4.0'>
+    <PhysicalSchema>
+        <Table name='dim_date'>
+            <Key>
+                <Column name='date_key'/>
+            </Key>
+        </Table>
+        <Table name='dim_item'>
+            <Key>
+                <Column name='h_item_hk'/>
+            </Key>
+        </Table>
+        <Table name='dim_location'>
+            <Key>
+                <Column name='date_key'/>
+            </Key>
+        </Table>
+        <Table name='dim_inventory_doc'>
+            <Key>
+                <Column name='date_key'/>
+            </Key>
+        </Table>
+        <Table name='fact_inventory_daily_snapshot'/>
+    </PhysicalSchema>
+    <Cube name='Sales'>
+
+        <MeasureGroups>
+            <MeasureGroup table='sales_fact_1997'>
+                <Measures>
+                    <Measure name='Unit sales' column='unit_sales' aggregator='sum'/>
+                    <Measure name='Store Sales' column='store_sales' aggregator='sum'/>
+                </Measures>
+                <DimensionLinks>
+                    <ForeignKeyLink dimension='Customer' foreignKeyColumn='customer_id'/>
+                    <ForeignKeyLink dimension='Time' foreignKeyColumn='time_id'/>
+                </DimensionLinks>
+            </MeasureGroup>
+        </MeasureGroups>
+    </Cube>
+    <Dimensions>
+
+        <Dimension name='Item' key='Item Key' >
+            <Attributes>
+                <Attribute name='Product Family' table='product_class' keyColumn='product_family' hasHierarchy='false'/>
+                <Attribute name='Product Department' table='product_class' hasHierarchy='false'>
+                    <Key>
+                        <Column name='product_family'/>
+                        <Column name='product_department'/>
+                    </Key>
+                    <Name>
+                        <Column name='product_department'/>
+                    </Name>
+                </Attribute>
+                <Attribute name='Product Category' table='product_class' hasHierarchy='false'>
+                    <Key>
+                        <Column name='product_family'/>
+                        <Column name='product_department'/>
+                        <Column name='product_category'/>
+                    </Key>
+                    <Name>
+                        <Column name='product_category'/>
+                    </Name>
+                </Attribute>
+                <Attribute name='Product Subcategory' table='product_class' hasHierarchy='false'>
+                    <Key>
+                        <Column name='product_family'/>
+                        <Column name='product_department'/>
+                        <Column name='product_category'/>
+                        <Column name='product_subcategory'/>
+                    </Key>
+                    <Name>
+                        <Column name='product_subcategory'/>
+                    </Name>
+                </Attribute>
+                <Attribute name='Brand Name' table='product' hasHierarchy='false'>
+                    <Key>
+                        <Column table='product_class' name='product_family'/>
+                        <Column table='product_class' name='product_department'/>
+                        <Column table='product_class' name='product_category'/>
+                        <Column table='product_class' name='product_subcategory'/>
+                        <Column name='brand_name'/>
+                    </Key>
+                    <Name>
+                        <Column name='brand_name'/>
+                    </Name>
+                </Attribute>
+                <Attribute name='Product Name' table='product' hasHierarchy='false'
+                           keyColumn='product_id' nameColumn='product_name'/>
+                <Attribute name='Product Id' table='product' keyColumn='product_id' hasHierarchy='false'/>
+            </Attributes>
+
+            <Hierarchies>
+                <Hierarchy name='Products' allMemberName='All Products'>
+                    <Level attribute='Product Family'/>
+                    <Level attribute='Product Department'/>
+                    <Level attribute='Product Category'/>
+                    <Level attribute='Product Subcategory'/>
+                    <Level attribute='Brand Name'/>
+                    <Level attribute='Product Name'/>
+                </Hierarchy>
+            </Hierarchies>
+        </Dimension>
+
+
+    </Dimensions>
 </Schema>

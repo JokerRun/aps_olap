@@ -1,0 +1,109 @@
+<?xml version='1.0'?>
+<Schema name='Sales' metamodelVersion='4.0'>
+    <PhysicalSchema>
+        <Table name='customer'>
+            <Key>
+                <Column name='customer_id'/>
+            </Key>
+        </Table>
+        <Table name='time_by_day'>
+            <Key>
+                <Column name='time_id'/>
+            </Key>
+        </Table>
+        <Table name='sales_fact_1997'/>
+    </PhysicalSchema>
+    <Cube name='Sales'>
+        <Dimensions>
+            <Dimension name='Time' table='time_by_day' type='TIME' key='Time Id'>
+                <Attributes>
+                    <Attribute name='Year' keyColumn='the_year' levelType='TimeYears' hasHierarchy='false'/>
+                    <Attribute name='Quarter' levelType='TimeQuarters' hasHierarchy='false'>
+                        <Key>
+                            <Column name='the_year'/>
+                            <Column name='quarter'/>
+                        </Key>
+                        <Name>
+                            <Column name='quarter'/>
+                        </Name>
+                    </Attribute>
+                    <!-- Use the_month as source for the name, so members look like
+                        [Time].[1997].[Q1].[Jan] rather than [Time].[1997].[Q1].[1]. -->
+                    <Attribute name='Month' hasHierarchy='false'>
+                        <Key>
+                            <Column name='the_year'/>
+                            <Column name='month_of_year'/>
+                        </Key>
+                        <Name>
+                            <Column name='the_month'/>
+                        </Name>
+                    </Attribute>
+                    <Attribute name='Date' keyColumn='the_date' hasHierarchy='false'/>
+                    <Attribute name='Time Id' keyColumn='time_id' hasHierarchy='false'/>
+                </Attributes>
+
+                <Hierarchies>
+                    <Hierarchy name='Time' hasAll='false'>
+                        <Level attribute='Year'/>
+                        <Level attribute='Quarter'/>
+                        <Level attribute='Month'/>
+                    </Hierarchy>
+                </Hierarchies>
+            </Dimension>
+            <Dimension name='Customer' table='customer' key='Name'>
+                <Attributes>
+                    <Attribute name='Country' keyColumn='country' hasHierarchy='false'/>
+                    <Attribute name='State Province' hasHierarchy='false'>
+                        <Key>
+                            <Column name='country'/>
+                            <Column name='state_province'/>
+                        </Key>
+                        <Name>
+                            <Column name='state_province'/>
+                        </Name>
+                    </Attribute>
+                    <Attribute name='City' hasHierarchy='false'>
+                        <Key>
+                            <Column name='country'/>
+                            <Column name='state_province'/>
+                            <Column name='city'/>
+                        </Key>
+                        <Name>
+                            <Column name='city'/>
+                        </Name>
+                    </Attribute>
+                    <Attribute name='Name' keyColumn='customer_id' nameColumn='fullname' orderByColumn='fullname' hasHierarchy='false'/>
+                    <Attribute name='Gender' keyColumn='gender' datatype="Boolean"/>
+                    <Attribute name='Marital Status' keyColumn='marital_status' approxRowCount='111'/>
+                    <Attribute name='Education' keyColumn='education' hasHierarchy='false'/>
+                    <Attribute name='Yearly Income' keyColumn='yearly_income' hierarchyAllMemberName='All Yearly Incomes'/>
+                </Attributes>
+
+                <Hierarchies>
+                    <Hierarchy name='Customers' allMemberName='All Customers'>
+                        <Level attribute='Country'/>
+                        <Level attribute='State Province'/>
+                        <Level attribute='City'/>
+                        <Level attribute='Name'/>
+                    </Hierarchy>
+                    <Hierarchy name='Education Level'>
+                        <Level attribute='Education' name='Education Level'/>
+                    </Hierarchy>
+                </Hierarchies>
+            </Dimension>
+
+        </Dimensions>
+        <MeasureGroups>
+            <MeasureGroup table='sales_fact_1997'>
+                <Measures>
+                    <Measure name='Unit sales' column='unit_sales' aggregator='sum'/>
+                    <Measure name='Store Sales' column='store_sales' aggregator='sum'/>
+                </Measures>
+                <DimensionLinks>
+                    <ForeignKeyLink dimension='Customer' foreignKeyColumn='customer_id'/>
+                    <ForeignKeyLink dimension='Time' foreignKeyColumn='time_id'/>
+                </DimensionLinks>
+            </MeasureGroup>
+        </MeasureGroups>
+    </Cube>
+</Schema>
