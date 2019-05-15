@@ -79,28 +79,38 @@
                 <CalculatedColumnDef name='full_name' type='String'>
                     <ExpressionView>
                         <SQL dialect='oracle'>
-                            <Column name='fname'/>  || ' ' || <Column name='lname'/>
+                            <Column name='fname'/>
+                            || ' ' ||
+                            <Column name='lname'/>
                         </SQL>
                         <SQL dialect='access'>
-                            <Column name='fname'/>  + ' ' + <Column name='lname'/>
+                            <Column name='fname'/>
+                            + ' ' +
+                            <Column name='lname'/>
                         </SQL>
                         <SQL dialect='postgres'>
-                            <Column name='fname'/>  || ' ' || <Column name='lname'/>
+                            <Column name='fname'/>
+                            || ' ' ||
+                            <Column name='lname'/>
                         </SQL>
                         <SQL dialect='mysql'>
-                            CONCAT(<Column name='fname'/>, ' ', <Column name='lname'/>)
+                            CONCAT(<Column name='fname'/>, ' ',<Column name='lname'/>)
                         </SQL>
                         <SQL dialect='mssql'>
-                            <Column name='fname'/> + ' ' + <Column name='lname'/>
+                            <Column name='fname'/>
+                            + ' ' +
+                            <Column name='lname'/>
                         </SQL>
                         <SQL dialect='derby'>
                             <Column name='fullname'/>
                         </SQL>
                         <SQL dialect='db2'>
-                            CONCAT(CONCAT(<Column name='fname'/>, ' '), <Column name='lname'/>)
+                            CONCAT(CONCAT(<Column name='fname'/>, ' '),<Column name='lname'/>)
                         </SQL>
                         <SQL dialect='luciddb'>
-                            <Column name='fname'/>  || ' ' || <Column name='lname'/>
+                            <Column name='fname'/>
+                            || ' ' ||
+                            <Column name='lname'/>
                         </SQL>
                         <SQL dialect='generic'>
                             <Column name='fullname'/>
@@ -114,13 +124,19 @@
                 <CalculatedColumnDef name='promotion_sales'>
                     <ExpressionView>
                         <SQL dialect='access'>
-                            Iif(<Column table='sales_fact_1997' name='promotion_id'/> = 0, 0,
+                            Iif(
+                            <Column table='sales_fact_1997' name='promotion_id'/>
+                            = 0, 0,
                             <Column table='sales_fact_1997' name='store_sales'/>)
                         </SQL>
-                    <SQL dialect='generic'>
-                        case when <Column table='sales_fact_1997' name='promotion_id'/> = 0 then 0
-                        else <Column table='sales_fact_1997' name='store_sales'/> end
-                    </SQL>
+                        <SQL dialect='generic'>
+                            case when
+                            <Column table='sales_fact_1997' name='promotion_id'/>
+                            = 0 then 0
+                            else
+                            <Column table='sales_fact_1997' name='store_sales'/>
+                            end
+                        </SQL>
                     </ExpressionView>
                 </CalculatedColumnDef>
             </ColumnDefs>
@@ -202,7 +218,7 @@
         </Hierarchies>
     </Dimension>
 
-    <Dimension name='Store2'  key='Store Id'>
+    <Dimension name='Store2' key='Store Id'>
         <Attributes>
             <Attribute name='Store Id' table='store' keyColumn='store_id' hasHierarchy='false'/>
             <Attribute name='Store Type' table='store' keyColumn='store_type' hierarchyAllMemberName='false'/>
@@ -215,7 +231,7 @@
             <Attribute name='Street address' table='store' keyColumn='store_street_address' hasHierarchy='false'/>
         </Attributes>
 
-       <Hierarchies>
+        <Hierarchies>
             <Hierarchy name='Store' allMemberName='All Path'>
                 <Level attribute='Store Type'/>
                 <Level attribute='Has coffee bar'/>
@@ -297,29 +313,43 @@
         <Hierarchies>
             <Hierarchy name='Time' hasAll='false'>
                 <Level attribute='Year'>
-                    <Annotations><Annotation name="AnalyzerDateFormat">[yyyy]</Annotation></Annotations>
+                    <Annotations>
+                        <Annotation name="AnalyzerDateFormat">[yyyy]</Annotation>
+                    </Annotations>
                 </Level>
                 <Level attribute='Quarter'>
-                    <Annotations><Annotation name="AnalyzerDateFormat">[yyyy].[Qq]</Annotation></Annotations>
+                    <Annotations>
+                        <Annotation name="AnalyzerDateFormat">[yyyy].[Qq]</Annotation>
+                    </Annotations>
                 </Level>
                 <Level attribute='Month'>
-                    <Annotations><Annotation name="AnalyzerDateFormat">[yyyy].[Qq].[mm]</Annotation></Annotations>
+                    <Annotations>
+                        <Annotation name="AnalyzerDateFormat">[yyyy].[Qq].[mm]</Annotation>
+                    </Annotations>
                 </Level>
             </Hierarchy>
             <Hierarchy name='Weekly' hasAll='true'>
                 <Level attribute='Year'>
-                    <Annotations><Annotation name="AnalyzerDateFormat">[yyyy]</Annotation></Annotations>
+                    <Annotations>
+                        <Annotation name="AnalyzerDateFormat">[yyyy]</Annotation>
+                    </Annotations>
                 </Level>
                 <Level attribute='Week'>
-                    <Annotations><Annotation name="AnalyzerDateFormat">[yyyy].[ww]</Annotation></Annotations>
+                    <Annotations>
+                        <Annotation name="AnalyzerDateFormat">[yyyy].[ww]</Annotation>
+                    </Annotations>
                 </Level>
                 <Level attribute='Day'>
-                    <Annotations><Annotation name="AnalyzerDateFormat">[yyyy].[ww].[dd]</Annotation></Annotations>
+                    <Annotations>
+                        <Annotation name="AnalyzerDateFormat">[yyyy].[ww].[dd]</Annotation>
+                    </Annotations>
                 </Level>
             </Hierarchy>
             <Hierarchy name='Date Only' hasAll='true'>
                 <Level attribute='Date String'>
-                    <Annotations><Annotation name="SaikuDayFormatString">yyyy/mm/dd</Annotation></Annotations>
+                    <Annotations>
+                        <Annotation name="SaikuDayFormatString">yyyy/mm/dd</Annotation>
+                    </Annotations>
                 </Level>
             </Hierarchy>
         </Hierarchies>
@@ -371,7 +401,7 @@
                 </Name>
             </Attribute>
             <Attribute name='Product Name' table='product' hasHierarchy='false'
-                keyColumn='product_id' nameColumn='product_name'/>
+                       keyColumn='product_id' nameColumn='product_name'/>
             <Attribute name='Product Id' table='product' keyColumn='product_id' hasHierarchy='false'/>
         </Attributes>
 
@@ -430,16 +460,17 @@
 
         <Dimensions>
 
-<Dimension name="Performance Season Day" table="sales_fact_1997" visible="true">
-   <Hierarchies>
-      <Hierarchy name="Performance">
-         <Level name="Performance Season Day" attribute="Day Of Season"/>
-      </Hierarchy>
-   </Hierarchies>
-   <Attributes>
-      <Attribute name="Day Of Season" keyColumn="promotion_id" datatype="Integer" hasHierarchy="false" orderByColumn="promotion_id"/>
-   </Attributes>
-</Dimension>
+            <Dimension name="Performance Season Day" table="sales_fact_1997" visible="true">
+                <Hierarchies>
+                    <Hierarchy name="Performance">
+                        <Level name="Performance Season Day" attribute="Day Of Season"/>
+                    </Hierarchy>
+                </Hierarchies>
+                <Attributes>
+                    <Attribute name="Day Of Season" keyColumn="promotion_id" datatype="Integer" hasHierarchy="false"
+                               orderByColumn="promotion_id"/>
+                </Attributes>
+            </Dimension>
             <Dimension source='Store'/>
 
             <Dimension source='Time'/>
@@ -450,7 +481,8 @@
                 <Attributes>
                     <Attribute name='Promotion Id' keyColumn='promotion_id' hasHierarchy='false'/>
                     <Attribute name='Promotion Name' keyColumn='promotion_name' hasHierarchy='false'/>
-                    <Attribute name='Media Type' keyColumn='media_type' hierarchyAllMemberName='All Media' hasHierarchy='false'/>
+                    <Attribute name='Media Type' keyColumn='media_type' hierarchyAllMemberName='All Media'
+                               hasHierarchy='false'/>
                 </Attributes>
                 <Hierarchies>
                     <Hierarchy name='Media Type' allMemberName='All Media'>
@@ -484,11 +516,13 @@
                             <Column name='city'/>
                         </Name>
                     </Attribute>
-                    <Attribute name='Name' keyColumn='customer_id' nameColumn='full_name' orderByColumn='full_name' hasHierarchy='false'/>
+                    <Attribute name='Name' keyColumn='customer_id' nameColumn='full_name' orderByColumn='full_name'
+                               hasHierarchy='false'/>
                     <Attribute name='Gender' keyColumn='gender' datatype="Boolean"/>
                     <Attribute name='Marital Status' keyColumn='marital_status' approxRowCount='111'/>
                     <Attribute name='Education' keyColumn='education' hasHierarchy='false'/>
-                    <Attribute name='Yearly Income' keyColumn='yearly_income' hierarchyAllMemberName='All Yearly Incomes'/>
+                    <Attribute name='Yearly Income' keyColumn='yearly_income'
+                               hierarchyAllMemberName='All Yearly Incomes'/>
                 </Attributes>
 
                 <Hierarchies>
@@ -512,11 +546,13 @@
                     <Measure name='Store Cost' column='store_cost' aggregator='sum' formatString='#,###.00'/>
                     <Measure name='Store Sales' column='store_sales' aggregator='sum' formatString='#,###.00'/>
                     <Measure name='Sales Count' column='product_id' aggregator='count' formatString='#,###'/>
-                    <Measure name='Customer Count' column='customer_id' aggregator='distinct-count' formatString='#,###'/>
-                    <Measure name='Promotion Sales' column='promotion_sales' aggregator='sum' formatString='#,###.00' datatype='Numeric'/>
+                    <Measure name='Customer Count' column='customer_id' aggregator='distinct-count'
+                             formatString='#,###'/>
+                    <Measure name='Promotion Sales' column='promotion_sales' aggregator='sum' formatString='#,###.00'
+                             datatype='Numeric'/>
                 </Measures>
                 <DimensionLinks>
-		    <FactLink dimension="Performance Season Day"/>
+                    <FactLink dimension="Performance Season Day"/>
                     <ForeignKeyLink dimension='Store' foreignKeyColumn='store_id'/>
                     <ForeignKeyLink dimension='Time' foreignKeyColumn='time_id'/>
                     <ForeignKeyLink dimension='Product' foreignKeyColumn='product_id'/>
@@ -524,22 +560,23 @@
                     <ForeignKeyLink dimension='Customer' foreignKeyColumn='customer_id'/>
                 </DimensionLinks>
             </MeasureGroup>
-       
+
         </MeasureGroups>
 
         <CalculatedMembers>
             <CalculatedMember name='Profit' dimension='Measures'>
-            <Formula>[Measures].[Store Sales] - [Measures].[Store Cost]</Formula>
-                <CalculatedMemberProperty name="FORMAT_STRING" expression="Iif(([Measures].[Store Sales]) &lt; 10000, '|(#,##0.00 &#8364;)|style=red', '|#,##0.00 &#8364;|style=green')"/>
+                <Formula>[Measures].[Store Sales] - [Measures].[Store Cost]</Formula>
+                <CalculatedMemberProperty name="FORMAT_STRING"
+                                          expression="Iif(([Measures].[Store Sales]) &lt; 10000, '|(#,##0.00 &#8364;)|style=red', '|#,##0.00 &#8364;|style=green')"/>
             </CalculatedMember>
             <CalculatedMember name='Profit last Period' dimension='Measures'
-                    formula='COALESCEEMPTY((Measures.[Profit], [Time].[Time].PREVMEMBER),    Measures.[Profit])'
-                    visible='false'>
+                              formula='COALESCEEMPTY((Measures.[Profit], [Time].[Time].PREVMEMBER),    Measures.[Profit])'
+                              visible='false'>
                 <CalculatedMemberProperty name='FORMAT_STRING' value='$#,##0.00'/>
             </CalculatedMember>
             <CalculatedMember name='Profit Growth' dimension='Measures'
-                    formula='([Measures].[Profit] - [Measures].[Profit last Period]) / [Measures].[Profit last Period]'
-                    visible='true' caption='Gewinn-Wachstum'>
+                              formula='([Measures].[Profit] - [Measures].[Profit last Period]) / [Measures].[Profit last Period]'
+                              visible='true' caption='Gewinn-Wachstum'>
                 <CalculatedMemberProperty name='FORMAT_STRING' value='0.0%'/>
             </CalculatedMember>
         </CalculatedMembers>
@@ -563,16 +600,17 @@
                     <Measure name='Sales Count' column='product_id' aggregator='count' formatString='#,###'>
                         <CalculatedMemberProperty name='MEMBER_ORDINAL' value='1'/>
                     </Measure>
-                    <Measure name='Unit Sales' column='unit_sales' aggregator='sum'    formatString='Standard'>
+                    <Measure name='Unit Sales' column='unit_sales' aggregator='sum' formatString='Standard'>
                         <CalculatedMemberProperty name='MEMBER_ORDINAL' value='2'/>
                     </Measure>
-                    <Measure name='Store Sales' column='store_sales' aggregator='sum'  formatString='#,###.00'>
+                    <Measure name='Store Sales' column='store_sales' aggregator='sum' formatString='#,###.00'>
                         <CalculatedMemberProperty name='MEMBER_ORDINAL' value='3'/>
                     </Measure>
-                    <Measure name='Store Cost' column='store_cost' aggregator='sum'    formatString='#,###.00'>
+                    <Measure name='Store Cost' column='store_cost' aggregator='sum' formatString='#,###.00'>
                         <CalculatedMemberProperty name='MEMBER_ORDINAL' value='6'/>
                     </Measure>
-                    <Measure name='Customer Count' column='customer_id' aggregator='distinct-count' formatString='#,###'>
+                    <Measure name='Customer Count' column='customer_id' aggregator='distinct-count'
+                             formatString='#,###'>
                         <CalculatedMemberProperty name='MEMBER_ORDINAL' value='7'/>
                     </Measure>
                 </Measures>
@@ -601,7 +639,7 @@
         </CalculatedMembers>
     </Cube>
 
-    <Cube name='Warehouse and Sales' >
+    <Cube name='Warehouse and Sales'>
         <Dimensions>
             <Dimension source='Store2'/>
             <Dimension source='Store3'/>
@@ -621,7 +659,6 @@
 
         </MeasureGroups>
 
-     
 
     </Cube>
 
@@ -630,10 +667,13 @@
             <Dimension name='Employee' key='Employee Id'>
                 <Attributes>
                     <Attribute name='Manager Id' table='employee' keyColumn='supervisor_id'/>
-                    <Attribute name='Employee Id' table='employee' keyColumn='employee_id' nameColumn='full_name' orderByColumn='employee_id'/>
+                    <Attribute name='Employee Id' table='employee' keyColumn='employee_id' nameColumn='full_name'
+                               orderByColumn='employee_id'/>
                     <Attribute name='Store Id' table='employee' keyColumn='store_id'/>
-                    <Attribute name='Store Type' table='store' keyColumn='store_type' hierarchyAllMemberName='All Store Types'/>
-                    <Attribute name='Pay Type' table='position' keyColumn='pay_type' hierarchyAllMemberName='All Pay Types'/>
+                    <Attribute name='Store Type' table='store' keyColumn='store_type'
+                               hierarchyAllMemberName='All Store Types'/>
+                    <Attribute name='Pay Type' table='position' keyColumn='pay_type'
+                               hierarchyAllMemberName='All Pay Types'/>
                     <Attribute name='Management Role' table='position' keyColumn='management_role'/>
                     <Attribute name='Position Title' table='position'>
                         <Key>
@@ -746,7 +786,7 @@
             <CalculatedMember name='Avg Salary' dimension='Measures'
                               formatString='Currency'
                               formula='[Measures].[Org Salary]/[Measures].[Number of Employees]'/>
-	    <CalculatedMember name="Test" hierarchy="[Store].[Stores]" formula="[Store].[Stores].[All Stores]"/>
+            <CalculatedMember name="Test" hierarchy="[Store].[Stores]" formula="[Store].[Stores].[All Stores]"/>
         </CalculatedMembers>
         <CalculatedMember hierarchy="[Actual VS Budget].[Type]" name="Actual">
             <Formula>
@@ -810,7 +850,8 @@
             <Dimension source='Store'/>
             <Dimension name='Has coffee bar'>
                 <Attributes>
-                    <Attribute name='Has coffee bar' table='store' datatype='Boolean' keyColumn='coffee_bar' hasHierarchy='true'/>
+                    <Attribute name='Has coffee bar' table='store' datatype='Boolean' keyColumn='coffee_bar'
+                               hasHierarchy='true'/>
                 </Attributes>
             </Dimension>
         </Dimensions>
@@ -833,29 +874,32 @@
     </Cube>
 
     <!--<Cube name='HR'>-->
-        <!--<Dimensions>-->
-            <!--<Dimension source='Time'/>-->
-        <!--</Dimensions>-->
-        <!--<MeasureGroups>-->
-            <!--<MeasureGroup name='HR' table='salary'>-->
-                <!--<Measures>-->
-                    <!--<Measure name='Org Salary' aggregator='sum' column='salary_paid'/>-->
-                <!--</Measures>-->
-                <!--<DimensionLinks>-->
-                    <!--<ForeignKeyLink dimension='Time' foreignKeyColumn='pay_date' attribute='Date'/>-->
-                <!--</DimensionLinks>-->
-            <!--</MeasureGroup>-->
-        <!--</MeasureGroups>-->
+    <!--<Dimensions>-->
+    <!--<Dimension source='Time'/>-->
+    <!--</Dimensions>-->
+    <!--<MeasureGroups>-->
+    <!--<MeasureGroup name='HR' table='salary'>-->
+    <!--<Measures>-->
+    <!--<Measure name='Org Salary' aggregator='sum' column='salary_paid'/>-->
+    <!--</Measures>-->
+    <!--<DimensionLinks>-->
+    <!--<ForeignKeyLink dimension='Time' foreignKeyColumn='pay_date' attribute='Date'/>-->
+    <!--</DimensionLinks>-->
+    <!--</MeasureGroup>-->
+    <!--</MeasureGroups>-->
     <!--</Cube>-->
 
     <Role name='California manager'>
         <SchemaGrant access='none'>
             <CubeGrant cube='Sales' access='all'>
-                <HierarchyGrant hierarchy='[Store].[Stores]' access='custom' topLevel='[Store].[Stores].[Store Country]'>
+                <HierarchyGrant hierarchy='[Store].[Stores]' access='custom'
+                                topLevel='[Store].[Stores].[Store Country]'>
                     <MemberGrant member='[Store].[Stores].[USA].[CA]' access='all'/>
                     <MemberGrant member='[Store].[Stores].[USA].[CA].[Los Angeles]' access='none'/>
                 </HierarchyGrant>
-                <HierarchyGrant hierarchy='[Customer].[Customers]' access='custom' topLevel='[Customer].[Customers].[State Province]' bottomLevel='[Customer].[Customers].[City]'>
+                <HierarchyGrant hierarchy='[Customer].[Customers]' access='custom'
+                                topLevel='[Customer].[Customers].[State Province]'
+                                bottomLevel='[Customer].[Customers].[City]'>
                     <MemberGrant member='[Customer].[Customers].[USA].[CA]' access='all'/>
                     <MemberGrant member='[Customer].[Customers].[USA].[CA].[Los Angeles]' access='none'/>
                 </HierarchyGrant>
@@ -870,6 +914,6 @@
         </SchemaGrant>
     </Role>
     <Role name='No Cubes'>
-	<SchemaGrant access='none'/>
+        <SchemaGrant access='none'/>
     </Role>
 </Schema>
