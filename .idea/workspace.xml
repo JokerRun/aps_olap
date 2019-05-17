@@ -22,38 +22,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="APS_DV@121.199.48.53" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dim_item: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
@@ -74,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mondrian/others/foodmart4.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="388" lean-forward="true" selection-start-line="326" selection-end-line="388" />
+            <state relative-caret-position="5820">
+              <caret line="388" selection-start-line="326" selection-end-line="388" />
             </state>
           </provider>
         </entry>
@@ -83,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mondrian/sample_schema.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="92" column="24" lean-forward="true" selection-start-line="52" selection-end-line="92" selection-end-column="24" />
+            <state relative-caret-position="159">
+              <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -191,10 +160,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="835" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -282,8 +251,8 @@
       <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.49731544" visible="true" weight="0.22895126" />
       <window_info anchor="bottom" id="Debug" order="9" />
       <window_info anchor="bottom" id="SQL Generator" order="10" weight="0.32928476" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.24216868" visible="true" weight="0.23748212" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.75783134" side_tool="true" visible="true" weight="0.23748212" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.24096386" visible="true" weight="0.24034335" />
+      <window_info anchor="right" id="Structure" order="1" sideWeight="0.7590361" side_tool="true" visible="true" weight="0.24034335" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -597,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mondrian/others/foodmart4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="388" lean-forward="true" selection-start-line="326" selection-end-line="388" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mondrian/Inventory_Snapshot.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -615,10 +577,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/others/foodmart4.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5820">
+          <caret line="388" selection-start-line="326" selection-end-line="388" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mondrian/sample_schema.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="92" column="24" lean-forward="true" selection-start-line="52" selection-end-line="92" selection-end-column="24" />
+        <state relative-caret-position="159">
+          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
         </state>
       </provider>
     </entry>
