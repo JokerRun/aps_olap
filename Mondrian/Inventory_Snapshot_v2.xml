@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<Schema name='aps' metamodelVersion='4.0'>
+    <PhysicalSchema>
+        <Table name='dim_date'>
+            <Key>
+                <Column name='date_key'/>
+            </Key>
+        </Table>
+        <Table name='dim_item'>
+            <Key>
+                <Column name='h_item_hk'/>
+            </Key>
+        </Table>
+        <Table name='dim_location'>
+            <Key>
+                <Column name='h_location_hk'/>
+            </Key>
+        </Table>
+        <Table name='dim_inventory_doc'>
+            <Key>
+                <Column name='h_inventory_doc_hk'/>
+            </Key>
+        </Table>
+        <Table name='fact_inventory_daily_snapshot'/>
+    </PhysicalSchema>
+    <Dimensions>
+        <Dimension name='Item' key='Item Key'>
+            <Attributes>
+                <Attribute name='Item Key' table='dim_item' keyColumn='h_item_hk' nameColumn='name'/>
+                <Attribute name='item_nr' table='dim_item' keyColumn='item_nr'/>
+                <Attribute name='product_type' table='dim_item' keyColumn='product_type'/>
+                <Attribute name='price_abc' table='dim_item' keyColumn='price_abc'/>
+                <Attribute name='product_group' table='dim_item' keyColumn='product_group'/>
+                <Attribute name='product_category' table='dim_item' keyColumn='product_category'/>
+                <Attribute name='supplier' table='dim_item' keyColumn='supplier'/>
+                <Attribute name='supplier_type' table='dim_item' keyColumn='supplier_type'/>
+                <Attribute name='strategy' table='dim_item' keyColumn='strategy'/>
+            </Attributes>
+        </Dimension>
+        <Dimension name='Location' key='Location Key'>
+            <Attributes>
+                <Attribute name='Location Key' table='dim_location' keyColumn='h_location_hk' nameColumn='name'/>
+                <Attribute name='location_nr' table='dim_location' keyColumn='location_nr'/>
+                <Attribute name='owner' table='dim_location' keyColumn='owner_id'/>
+                <Attribute name='category' table='dim_location' keyColumn='category'/>
+                <Attribute name='subcategory' table='dim_location' keyColumn='subcategory'/>
+            </Attributes>
+        </Dimension>
+    </Dimensions>
+    <Cube name='Inventory On Hand'>
+        <Dimensions>
+            <Dimension source='Item'/>
+            <Dimension source='Location'/>
+        </Dimensions>
+        <MeasureGroups>
+            <MeasureGroup table='fact_inventory_daily_snapshot'>
+                <Measures>
+                    <Measure name='Onhand' column='onhand' aggregator='sum'/>
+                    <Measure name='Onhand Value' column='onhand_value' aggregator='sum'/>
+                </Measures>
+                <DimensionLinks>
+                    <ForeignKeyLink dimension='Item' foreignKeyColumn='item_key'/>
+                    <ForeignKeyLink dimension='Location' foreignKeyColumn='location_key'/>
+                </DimensionLinks>
+            </MeasureGroup>
+        </MeasureGroups>
+    </Cube>
+
+</Schema>
