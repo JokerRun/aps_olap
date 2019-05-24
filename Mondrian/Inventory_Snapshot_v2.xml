@@ -20,37 +20,161 @@
             <Key>
                 <Column name='h_inventory_doc_hk'/>
             </Key>
+            <ColumnDefs>
+                <CalculatedColumnDef name='doc_nr_line' type='String'>
+                    <ExpressionView>
+                        <SQL dialect='mysql'>
+                            CONCAT(<Column name='inventory_doc_nr'/>, '-',<Column name='inventory_doc_line'/>)
+                        </SQL>
+                    </ExpressionView>
+                </CalculatedColumnDef>
+            </ColumnDefs>
         </Table>
         <Table name='fact_inventory_daily_snapshot'/>
+        <Table name='fact_inventory_movement'/>
     </PhysicalSchema>
-    <Dimensions>
-        <Dimension name='Item' key='Item Key'>
-            <Attributes>
-                <Attribute name='Item Key' table='dim_item' keyColumn='h_item_hk' nameColumn='name'/>
-                <Attribute name='item_nr' table='dim_item' keyColumn='item_nr'/>
-                <Attribute name='product_type' table='dim_item' keyColumn='product_type'/>
-                <Attribute name='price_abc' table='dim_item' keyColumn='price_abc'/>
-                <Attribute name='product_group' table='dim_item' keyColumn='product_group'/>
-                <Attribute name='product_category' table='dim_item' keyColumn='product_category'/>
-                <Attribute name='supplier' table='dim_item' keyColumn='supplier'/>
-                <Attribute name='supplier_type' table='dim_item' keyColumn='supplier_type'/>
-                <Attribute name='strategy' table='dim_item' keyColumn='strategy'/>
-            </Attributes>
-        </Dimension>
-        <Dimension name='Location' key='Location Key'>
-            <Attributes>
-                <Attribute name='Location Key' table='dim_location' keyColumn='h_location_hk' nameColumn='name'/>
-                <Attribute name='location_nr' table='dim_location' keyColumn='location_nr'/>
-                <Attribute name='owner' table='dim_location' keyColumn='owner_id'/>
-                <Attribute name='category' table='dim_location' keyColumn='category'/>
-                <Attribute name='subcategory' table='dim_location' keyColumn='subcategory'/>
-            </Attributes>
-        </Dimension>
-    </Dimensions>
+    <Dimension name='Item' key='Item Key'>
+        <Attributes>
+            <Attribute name='Item Key' table='dim_item' keyColumn='h_item_hk' nameColumn='name' hasAll="false"/>
+            <Attribute name='item_nr' table='dim_item' keyColumn='item_nr' hasAll="false"/>
+            <Attribute name='product_type' table='dim_item' keyColumn='product_type' hasAll="false"/>
+            <Attribute name='price_abc' table='dim_item' keyColumn='price_abc' hasAll="false"/>
+            <Attribute name='product_group' table='dim_item' keyColumn='product_group' hasAll="false"/>
+            <Attribute name='product_category' table='dim_item' keyColumn='product_category' hasAll="false"/>
+            <Attribute name='supplier' table='dim_item' keyColumn='supplier' hasAll="false"/>
+            <Attribute name='supplier_type' table='dim_item' keyColumn='supplier_type' hasAll="false"/>
+            <Attribute name='strategy' table='dim_item' keyColumn='strategy' hasAll="false"/>
+        </Attributes>
+    </Dimension>
+    <Dimension name='Location' key='Location Key'>
+        <Attributes>
+            <Attribute name='Location Key' table='dim_location' keyColumn='h_location_hk' nameColumn='name'
+                       hasAll="false"/>
+            <Attribute name='location_nr' table='dim_location' keyColumn='location_nr' hasAll="false"/>
+            <Attribute name='owner' table='dim_location' keyColumn='owner_id' hasAll="false"/>
+            <Attribute name='category' table='dim_location' keyColumn='category' hasAll="false"/>
+            <Attribute name='subcategory' table='dim_location' keyColumn='subcategory' hasAll="false"/>
+        </Attributes>
+    </Dimension>
+    <Dimension name='Document' key='Document Key'>
+        <Attributes>
+            <Attribute name='Document Key' table='dim_inventory_doc' keyColumn='h_inventory_doc_hk' hasAll="false">
+                <Name>
+                    <Column name="doc_nr_line"/>
+                </Name>
+            </Attribute>
+            <Attribute name='movement code' table='dim_inventory_doc' keyColumn='movement_code' hasAll="false"/>
+            <Attribute name='doc operator' table='dim_inventory_doc' keyColumn='inventory_doc_operator' hasAll="false"/>
+        </Attributes>
+    </Dimension>
+
+    <Dimension name='SnapshotDate' table='dim_date' type='TIME' key='Time Id'>
+        <Attributes>
+            <Attribute name='Year' keyColumn='year' levelType='TimeYears' hasHierarchy='false'/>
+            <Attribute name='Quarter' levelType='TimeQuarters' hasHierarchy='false'>
+                <Key>
+                    <Column name='year'/>
+                    <Column name='quarter'/>
+                </Key>
+                <Name>
+                    <Column name='quarter'/>
+                </Name>
+            </Attribute>
+            <Attribute name='Month' hasHierarchy='false'>
+                <Key>
+                    <Column name='year'/>
+                    <Column name='month'/>
+                </Key>
+                <Name>
+                    <Column name='month_name'/>
+                </Name>
+            </Attribute>
+            <Attribute name='Date' keyColumn='date_key' hasHierarchy='false'/>
+            <Attribute name='Time Id' keyColumn='date_key' hasHierarchy='false'/>
+        </Attributes>
+
+        <Hierarchies>
+            <Hierarchy name='Time' hasAll='false'>
+                <Level attribute='Year'/>
+                <Level attribute='Quarter'/>
+                <Level attribute='Month'/>
+                <Level attribute='Date'/>
+            </Hierarchy>
+        </Hierarchies>
+    </Dimension>
+    <Dimension name='DullDate' table='dim_date' type='TIME' key='Time Id'>
+        <Attributes>
+            <Attribute name='Year' keyColumn='year' levelType='TimeYears' hasHierarchy='false'/>
+            <Attribute name='Quarter' levelType='TimeQuarters' hasHierarchy='false'>
+                <Key>
+                    <Column name='year'/>
+                    <Column name='quarter'/>
+                </Key>
+                <Name>
+                    <Column name='quarter'/>
+                </Name>
+            </Attribute>
+            <Attribute name='Month' hasHierarchy='false'>
+                <Key>
+                    <Column name='year'/>
+                    <Column name='month'/>
+                </Key>
+                <Name>
+                    <Column name='month_name'/>
+                </Name>
+            </Attribute>
+            <Attribute name='Date' keyColumn='date_key' hasHierarchy='false'/>
+            <Attribute name='Time Id' keyColumn='date_key' hasHierarchy='false'/>
+        </Attributes>
+
+        <Hierarchies>
+            <Hierarchy name='Time' hasAll='false'>
+                <Level attribute='Year'/>
+                <Level attribute='Quarter'/>
+                <Level attribute='Month'/>
+                <Level attribute='Date'/>
+            </Hierarchy>
+        </Hierarchies>
+    </Dimension>
+    <Dimension name='MoveDate' table='dim_date' type='TIME' key='Time Id'>
+        <Attributes>
+            <Attribute name='Year' keyColumn='year' levelType='TimeYears' hasHierarchy='false'/>
+            <Attribute name='Quarter' levelType='TimeQuarters' hasHierarchy='false'>
+                <Key>
+                    <Column name='year'/>
+                    <Column name='quarter'/>
+                </Key>
+                <Name>
+                    <Column name='quarter'/>
+                </Name>
+            </Attribute>
+            <Attribute name='Month' hasHierarchy='false'>
+                <Key>
+                    <Column name='year'/>
+                    <Column name='month'/>
+                </Key>
+                <Name>
+                    <Column name='month_name'/>
+                </Name>
+            </Attribute>
+            <Attribute name='Date' keyColumn='date_key' hasHierarchy='false'/>
+            <Attribute name='Time Id' keyColumn='date_key' hasHierarchy='false'/>
+        </Attributes>
+
+        <Hierarchies>
+            <Hierarchy name='Time' hasAll='false'>
+                <Level attribute='Year'/>
+                <Level attribute='Quarter'/>
+                <Level attribute='Month'/>
+                <Level attribute='Date'/>
+            </Hierarchy>
+        </Hierarchies>
+    </Dimension>
     <Cube name='Inventory On Hand'>
         <Dimensions>
             <Dimension source='Item'/>
             <Dimension source='Location'/>
+            <Dimension source='DullDate'/>
         </Dimensions>
         <MeasureGroups>
             <MeasureGroup table='fact_inventory_daily_snapshot'>
@@ -61,9 +185,38 @@
                 <DimensionLinks>
                     <ForeignKeyLink dimension='Item' foreignKeyColumn='item_key'/>
                     <ForeignKeyLink dimension='Location' foreignKeyColumn='location_key'/>
+                    <ForeignKeyLink dimension='DullDate' foreignKeyColumn='dull_date_key'/>
                 </DimensionLinks>
             </MeasureGroup>
         </MeasureGroups>
     </Cube>
+
+    <Cube name='InventoryMovement'>
+        <Dimensions>
+            <Dimension source='Item'/>
+            <Dimension source='Location'/>
+            <Dimension source='MoveDate'/>
+            <Dimension name='MovementType' table="fact_inventory_movement">
+                <Attributes>
+                    <Attribute name="MovementType" keyColumn="operate_type" approxRowCount="2"/>
+                </Attributes>
+            </Dimension>
+        </Dimensions>
+        <MeasureGroups>
+            <MeasureGroup table='fact_inventory_movement'>
+                <Measures>
+                    <Measure name='Movement Count' column='inventory_affected_count' aggregator='sum'/>
+                    <Measure name='Movement Amount' column='inventory_affected_amount' aggregator='sum'/>
+                </Measures>
+                <DimensionLinks>
+                    <ForeignKeyLink dimension='Item' foreignKeyColumn='h_item_hk'/>
+                    <ForeignKeyLink dimension='Location' foreignKeyColumn='h_location_hk'/>
+                    <ForeignKeyLink dimension='MoveDate' foreignKeyColumn='move_date_key'/>
+                    <FactLink dimension='MovementType'/>
+                </DimensionLinks>
+            </MeasureGroup>
+        </MeasureGroups>
+    </Cube>
+
 
 </Schema>

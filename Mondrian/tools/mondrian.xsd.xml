@@ -1,0 +1,238 @@
+<Schema name="anySimpleType" caption="anySimpleType" description="anySimpleType" measuresCaption="anySimpleType" defaultRole="anySimpleType" quoteSql="true" missingLink="warning" metamodelVersion="anySimpleType" locales="anySimpleType">
+  <!--You have a CHOICE of the next 9 items at this level-->
+  <Dimension name="anySimpleType" source="anySimpleType" visible="true" caption="anySimpleType" description="anySimpleType" type="OTHER" table="anySimpleType" key="anySimpleType" hanger="false">
+    <!--You have a CHOICE of the next 3 items at this level-->
+    <Hierarchies>
+      <!--Zero or more repetitions:-->
+      <Hierarchy name="anySimpleType" visible="true" hasAll="false" allMemberName="anySimpleType" allMemberCaption="anySimpleType" allLevelName="anySimpleType" defaultMember="anySimpleType" caption="anySimpleType" description="anySimpleType">
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <Level name="anySimpleType" visible="true" attribute="anySimpleType" parentAttribute="anySimpleType" nullParentValue="anySimpleType" hideMemberIf="Never" formatter="anySimpleType" caption="anySimpleType" description="anySimpleType">
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <Closure parentColumn="anySimpleType" childColumn="anySimpleType" distanceColumn="distance" table="anySimpleType"/>
+          <Annotations>
+            <!--Zero or more repetitions:-->
+            <Annotation name="anySimpleType">gero cum</Annotation>
+          </Annotations>
+        </Level>
+        <Annotations>
+          <!--Zero or more repetitions:-->
+          <Annotation name="anySimpleType">sonoras aeoliam</Annotation>
+        </Annotations>
+      </Hierarchy>
+    </Hierarchies>
+    <Attributes>
+      <!--Zero or more repetitions:-->
+      <Attribute name="anySimpleType" caption="anySimpleType" description="anySimpleType" visible="true" levelType="Regular" approxRowCount="anySimpleType" table="anySimpleType" keyColumn="anySimpleType" nameColumn="anySimpleType" orderByColumn="anySimpleType" captionColumn="anySimpleType" datatype="String" hasHierarchy="true" hierarchyHasAll="true" hierarchyCaption="anySimpleType" hierarchyAllMemberName="anySimpleType" hierarchyAllMemberCaption="anySimpleType" hierarchyAllLevelName="anySimpleType" hierarchyDefaultMember="anySimpleType">
+        <!--You have a CHOICE of the next 7 items at this level-->
+        <Property name="anySimpleType" attribute="anySimpleType" caption="anySimpleType" description="anySimpleType" formatter="anySimpleType">
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <Annotations>
+            <!--Zero or more repetitions:-->
+            <Annotation name="anySimpleType">quae ventos</Annotation>
+          </Annotations>
+          <PropertyFormatter className="anySimpleType">
+            <!--Optional:-->
+            <Script language="JavaScript">verrantque temperat</Script>
+          </PropertyFormatter>
+        </Property>
+        <Key name="anySimpleType">
+          <!--Zero or more repetitions:-->
+          <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+        </Key>
+        <Name>
+          <!--Zero or more repetitions:-->
+          <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+        </Name>
+        <OrderBy>
+          <!--Zero or more repetitions:-->
+          <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+        </OrderBy>
+        <Caption>
+          <!--Zero or more repetitions:-->
+          <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+        </Caption>
+        <Annotations>
+          <!--Zero or more repetitions:-->
+          <Annotation name="anySimpleType">per turbine</Annotation>
+        </Annotations>
+        <MemberFormatter className="anySimpleType">
+          <!--Optional:-->
+          <Script language="JavaScript">circum regemque</Script>
+        </MemberFormatter>
+      </Attribute>
+    </Attributes>
+    <Annotations>
+      <!--Zero or more repetitions:-->
+      <Annotation name="anySimpleType">nimborum fremunt</Annotation>
+    </Annotations>
+  </Dimension>
+  <Cube name="anySimpleType" visible="true" caption="anySimpleType" description="anySimpleType" defaultMeasure="anySimpleType" cache="true" enabled="true" enableScenarios="false">
+    <!--You have a CHOICE of the next 5 items at this level-->
+    <Dimensions>
+      <!--Zero or more repetitions:-->
+      <Dimension name="anySimpleType" source="anySimpleType" visible="true" caption="anySimpleType" description="anySimpleType" type="OTHER" table="anySimpleType" key="anySimpleType" hanger="false">
+        <!--You have a CHOICE of the next 3 items at this level-->
+        <Hierarchies>
+          <!--Zero or more repetitions:-->
+          <Hierarchy name="anySimpleType" visible="true" hasAll="false" allMemberName="anySimpleType" allMemberCaption="anySimpleType" allLevelName="anySimpleType" defaultMember="anySimpleType" caption="anySimpleType" description="anySimpleType">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <Level name="anySimpleType" visible="true" attribute="anySimpleType" parentAttribute="anySimpleType" nullParentValue="anySimpleType" hideMemberIf="Never" formatter="anySimpleType" caption="anySimpleType" description="anySimpleType">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <Closure parentColumn="anySimpleType" childColumn="anySimpleType" distanceColumn="distance" table="anySimpleType"/>
+              <Annotations>
+                <!--Zero or more repetitions:-->
+                <Annotation name="anySimpleType">ferant profundum</Annotation>
+              </Annotations>
+            </Level>
+            <Annotations>
+              <!--Zero or more repetitions:-->
+              <Annotation name="anySimpleType">sceptra et</Annotation>
+            </Annotations>
+          </Hierarchy>
+        </Hierarchies>
+        <Attributes>
+          <!--Zero or more repetitions:-->
+          <Attribute name="anySimpleType" caption="anySimpleType" description="anySimpleType" visible="true" levelType="Regular" approxRowCount="anySimpleType" table="anySimpleType" keyColumn="anySimpleType" nameColumn="anySimpleType" orderByColumn="anySimpleType" captionColumn="anySimpleType" datatype="String" hasHierarchy="true" hierarchyHasAll="true" hierarchyCaption="anySimpleType" hierarchyAllMemberName="anySimpleType" hierarchyAllMemberCaption="anySimpleType" hierarchyAllLevelName="anySimpleType" hierarchyDefaultMember="anySimpleType">
+            <!--You have a CHOICE of the next 7 items at this level-->
+            <Property name="anySimpleType" attribute="anySimpleType" caption="anySimpleType" description="anySimpleType" formatter="anySimpleType">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <Annotations>
+                <!--Zero or more repetitions:-->
+                <Annotation name="anySimpleType">turbine iovis</Annotation>
+              </Annotations>
+              <PropertyFormatter className="anySimpleType">
+                <!--Optional:-->
+                <Script language="JavaScript">flammato speluncis</Script>
+              </PropertyFormatter>
+            </Property>
+            <Key name="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+            </Key>
+            <Name>
+              <!--Zero or more repetitions:-->
+              <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+            </Name>
+            <OrderBy>
+              <!--Zero or more repetitions:-->
+              <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+            </OrderBy>
+            <Caption>
+              <!--Zero or more repetitions:-->
+              <Column table="anySimpleType" name="anySimpleType" aggColumn="anySimpleType"/>
+            </Caption>
+            <Annotations>
+              <!--Zero or more repetitions:-->
+              <Annotation name="anySimpleType">profundum bella</Annotation>
+            </Annotations>
+            <MemberFormatter className="anySimpleType">
+              <!--Optional:-->
+              <Script language="JavaScript">nubibus flammas</Script>
+            </MemberFormatter>
+          </Attribute>
+        </Attributes>
+        <Annotations>
+          <!--Zero or more repetitions:-->
+          <Annotation name="anySimpleType">ac hoc</Annotation>
+        </Annotations>
+      </Dimension>
+    </Dimensions>
+    <CalculatedMembers>
+      <!--Zero or more repetitions:-->
+      <CalculatedMember name="anySimpleType" formatString="anySimpleType" caption="anySimpleType" description="anySimpleType" formula="anySimpleType" dimension="anySimpleType" hierarchy="anySimpleType" parent="anySimpleType" visible="false">
+        <!--You have a CHOICE of the next 4 items at this level-->
+        <CalculatedMemberProperty name="anySimpleType" caption="anySimpleType" description="anySimpleType" expression="anySimpleType" value="anySimpleType"/>
+        <Formula>string</Formula>
+        <Annotations>
+          <!--Zero or more repetitions:-->
+          <Annotation name="anySimpleType">ac caelumque</Annotation>
+        </Annotations>
+        <CellFormatter className="anySimpleType">
+          <!--Optional:-->
+          <Script language="JavaScript">speluncis circum</Script>
+        </CellFormatter>
+      </CalculatedMember>
+    </CalculatedMembers>
+    <NamedSets>
+      <!--Zero or more repetitions:-->
+      <NamedSet name="anySimpleType" caption="anySimpleType" description="anySimpleType" formula="anySimpleType">
+        <!--You have a CHOICE of the next 4 items at this level-->
+        <CalculatedMemberProperty name="anySimpleType" caption="anySimpleType" description="anySimpleType" expression="anySimpleType" value="anySimpleType"/>
+        <Formula>string</Formula>
+        <Annotations>
+          <!--Zero or more repetitions:-->
+          <Annotation name="anySimpleType">aris coniunx</Annotation>
+        </Annotations>
+        <CellFormatter className="anySimpleType">
+          <!--Optional:-->
+          <Script language="JavaScript">praeterea arce</Script>
+        </CellFormatter>
+      </NamedSet>
+    </NamedSets>
+    <Annotations>
+      <!--Zero or more repetitions:-->
+      <Annotation name="anySimpleType">claustra circum</Annotation>
+    </Annotations>
+    <MeasureGroups>
+      <!--Zero or more repetitions:-->
+      <MeasureGroup name="anySimpleType" type="fact" table="anySimpleType" ignoreUnrelatedDimensions="false" approxRowCount="anySimpleType">
+        <!--Zero or more repetitions:-->
+        <MeasureGroupElement>anyType</MeasureGroupElement>
+      </MeasureGroup>
+    </MeasureGroups>
+  </Cube>
+  <NamedSet name="anySimpleType" caption="anySimpleType" description="anySimpleType" formula="anySimpleType">
+    <!--You have a CHOICE of the next 4 items at this level-->
+    <CalculatedMemberProperty name="anySimpleType" caption="anySimpleType" description="anySimpleType" expression="anySimpleType" value="anySimpleType"/>
+    <Formula>string</Formula>
+    <Annotations>
+      <!--Zero or more repetitions:-->
+      <Annotation name="anySimpleType">imperio certo</Annotation>
+    </Annotations>
+    <CellFormatter className="anySimpleType">
+      <!--Optional:-->
+      <Script language="JavaScript">quisquam et</Script>
+    </CellFormatter>
+  </NamedSet>
+  <Role name="anySimpleType" className="anySimpleType">
+    <!--You have a CHOICE of the next 4 items at this level-->
+    <SchemaGrant access="all_dimensions">
+      <!--Zero or more repetitions:-->
+      <CubeGrant cube="anySimpleType" access="none">
+        <!--Zero or more repetitions:-->
+        <DimensionGrant dimension="anySimpleType" access="all"/>
+        <!--Zero or more repetitions:-->
+        <HierarchyGrant hierarchy="anySimpleType" topLevel="anySimpleType" bottomLevel="anySimpleType" rollupPolicy="anySimpleType" access="none">
+          <!--Zero or more repetitions:-->
+          <MemberGrant member="anySimpleType" access="none"/>
+        </HierarchyGrant>
+      </CubeGrant>
+    </SchemaGrant>
+    <Union>
+      <!--Zero or more repetitions:-->
+      <RoleUsage roleName="anySimpleType"/>
+    </Union>
+    <Annotations>
+      <!--Zero or more repetitions:-->
+      <Annotation name="anySimpleType">talia pectore</Annotation>
+    </Annotations>
+    <Script language="JavaScript">austris annos</Script>
+  </Role>
+  <UserDefinedFunction name="anySimpleType" className="anySimpleType">
+    <!--Optional:-->
+    <Script language="JavaScript">sciret certo</Script>
+  </UserDefinedFunction>
+  <Parameter name="anySimpleType" description="anySimpleType" type="String" modifiable="true" defaultValue="anySimpleType"/>
+  <Annotations>
+    <!--Zero or more repetitions:-->
+    <Annotation name="anySimpleType">dare rates</Annotation>
+  </Annotations>
+  <Localization>
+    <!--Zero or more repetitions:-->
+    <LocalizationElement>anyType</LocalizationElement>
+  </Localization>
+  <PhysicalSchema>
+    <!--Zero or more repetitions:-->
+    <PhysicalSchemaElement>anyType</PhysicalSchemaElement>
+  </PhysicalSchema>
+</Schema>
