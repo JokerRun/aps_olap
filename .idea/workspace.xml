@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243e2c8e-f6d0-4ccc-90b0-4edaba474057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mondrian/tools/mondrian.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mondrian/tools/mondrian.xsd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mondrian/tools/license_ubuntu.lic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +58,81 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
+              <folding>
+                <element signature="n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Table#0;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Table#0;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Table#1;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Table#1;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Table#2;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Table#2;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#ExpressionView#0;n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#SQL#0;n#ExpressionView#0;n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#0;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#0;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#1;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#1;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#0;n#Attributes#0;n#Dimension#1;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#2;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#0;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
+                <element signature="n#Name#0;n#Attribute#0;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#1;n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Attribute#1;n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Name#0;n#Attribute#1;n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#2;n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Attribute#2;n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Hierarchies#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#3;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#1;n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Attribute#1;n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Name#0;n#Attribute#1;n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#2;n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Attribute#2;n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Hierarchies#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#4;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#1;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Attribute#1;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Name#0;n#Attribute#1;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Key#0;n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
+                <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
+                <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
+                <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -196,12 +269,6 @@
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
               <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
               <item name="Mondrian" type="462c0819:PsiDirectoryNode" />
-              <item name="others" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
-              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="Mondrian" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -280,9 +347,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/SQL-Insert-Statements.sql.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/JSON-Groovy.json.groovy">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -604,10 +668,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/tools/license_ubuntu.lic">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        <state relative-caret-position="391">
+          <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
           <folding>
             <element signature="n#PhysicalSchema#0;n#Schema#0;n#!!top" />
             <element signature="n#Table#0;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
@@ -617,14 +688,20 @@
             <element signature="n#Table#2;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
             <element signature="n#Key#0;n#Table#2;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
             <element signature="n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
-            <element signature="n#Attribute#1;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
-            <element signature="n#Key#0;n#Attribute#1;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
-            <element signature="n#Name#0;n#Attribute#1;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
-            <element signature="n#Attribute#2;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
-            <element signature="n#Key#0;n#Attribute#2;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
-            <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
-            <element signature="n#Hierarchies#0;n#Dimension#2;n#Schema#0;n#!!top" />
-            <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#2;n#Schema#0;n#!!top" />
+            <element signature="n#Key#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#ExpressionView#0;n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#SQL#0;n#ExpressionView#0;n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Dimension#0;n#Schema#0;n#!!top" />
+            <element signature="n#Attributes#0;n#Dimension#0;n#Schema#0;n#!!top" />
+            <element signature="n#Dimension#1;n#Schema#0;n#!!top" />
+            <element signature="n#Attributes#0;n#Dimension#1;n#Schema#0;n#!!top" />
+            <element signature="n#Attribute#0;n#Attributes#0;n#Dimension#1;n#Schema#0;n#!!top" />
+            <element signature="n#Dimension#2;n#Schema#0;n#!!top" />
+            <element signature="n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
+            <element signature="n#Attribute#0;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
+            <element signature="n#Name#0;n#Attribute#0;n#Attributes#0;n#Dimension#2;n#Schema#0;n#!!top" />
             <element signature="n#Dimension#3;n#Schema#0;n#!!top" />
             <element signature="n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
             <element signature="n#Attribute#1;n#Attributes#0;n#Dimension#3;n#Schema#0;n#!!top" />
@@ -645,12 +722,26 @@
             <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#4;n#Schema#0;n#!!top" />
             <element signature="n#Hierarchies#0;n#Dimension#4;n#Schema#0;n#!!top" />
             <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#4;n#Schema#0;n#!!top" />
-            <element signature="n#Cube#0;n#Schema#0;n#!!top" />
+            <element signature="n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Attribute#1;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Key#0;n#Attribute#1;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Name#0;n#Attribute#1;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Key#0;n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
             <element signature="n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#Attributes#0;n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
           </folding>
         </state>
       </provider>

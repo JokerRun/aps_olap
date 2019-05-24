@@ -172,9 +172,9 @@
     </Dimension>
     <Cube name='Inventory On Hand'>
         <Dimensions>
-            <Dimension source='Item'/>
-            <Dimension source='Location'/>
             <Dimension source='DullDate'/>
+            <Dimension source='Location'/>
+            <Dimension source='Item'/>
         </Dimensions>
         <MeasureGroups>
             <MeasureGroup table='fact_inventory_daily_snapshot'>
@@ -193,14 +193,14 @@
 
     <Cube name='InventoryMovement'>
         <Dimensions>
-            <Dimension source='Item'/>
-            <Dimension source='Location'/>
-            <Dimension source='MoveDate'/>
             <Dimension name='MovementType' table="fact_inventory_movement">
                 <Attributes>
                     <Attribute name="MovementType" keyColumn="operate_type" approxRowCount="2"/>
                 </Attributes>
             </Dimension>
+            <Dimension source='Location'/>
+            <Dimension source='Item'/>
+            <Dimension source='MoveDate'/>
         </Dimensions>
         <MeasureGroups>
             <MeasureGroup table='fact_inventory_movement'>
