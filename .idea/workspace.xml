@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243e2c8e-f6d0-4ccc-90b0-4edaba474057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mondrian/tools/license_ubuntu.lic" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.0.fact_ito_tmp.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.fact_ito.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e15b0ed-4e60-4883-997a-75d5b7b8b15c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +54,7 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="dm_aps: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dim_inventory_doc: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="fact_inventory_ito: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -60,10 +62,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml">
+        <entry file="file://$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v3.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
+            <state relative-caret-position="165">
+              <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
               <folding>
                 <element signature="n#PhysicalSchema#0;n#Schema#0;n#!!top" />
                 <element signature="n#Table#0;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
@@ -117,17 +119,57 @@
                 <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
                 <element signature="n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
                 <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
+                <element signature="n#Cube#0;n#Schema#0;n#!!top" />
+                <element signature="n#Dimensions#0;n#Cube#0;n#Schema#0;n#!!top" />
                 <element signature="n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
                 <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
                 <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
                 <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
-                <element signature="n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
-                <element signature="n#Attributes#0;n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#Dimension#0;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#0;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
                 <element signature="n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
                 <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
                 <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
                 <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+                <element signature="n#Attributes#0;n#Dimension#0;n#Dimensions#0;n#Cube#2;n#Schema#0;n#!!top" />
+                <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#2;n#Schema#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.0.fact_ito_tmp.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="12" />
+              <folding>
+                <element signature="e#440#667#0" />
+                <element signature="e#706#932#0" />
+                <element signature="e#971#1292#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.fact_ito.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/table/fact_inventory_ito">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="08627f87-e3ee-4dc7-8746-38573954d189">
+              <filtering>
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
@@ -187,10 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5c3e2010-e16f-41ef-bf23-cef9c1eb6150/console_6.sql" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/4.load_stage_inventory" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/1.create_dw_raw" />
-        <option value="$PROJECT_DIR$/2.DataWarehouse/2.2.dw_raw/2.load_dw_raw" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/1.fact_inventory_daily_snapshot" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.load_stage_item.sql" />
         <option value="$PROJECT_DIR$/2.DataWarehouse/2.1.stage_area/2.1.create_stage_item.sql" />
@@ -237,11 +275,15 @@
         <option value="$PROJECT_DIR$/Mondrian/Readme.md" />
         <option value="$PROJECT_DIR$/Mondrian/FoodMart.xml" />
         <option value="$PROJECT_DIR$/Mondrian/Inventory_Snapshot.xml" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.fact_ito_tmp.sql" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.fact_ito.sql" />
         <option value="$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml" />
+        <option value="$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v3.xml" />
+        <option value="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.0.fact_ito_tmp.sql" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -263,13 +305,25 @@
             <path>
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
               <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
-              <item name="Mondrian" type="462c0819:PsiDirectoryNode" />
+              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
+              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="2.3.DataMart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
+              <item name="2.DataWarehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="2.3.DataMart" type="462c0819:PsiDirectoryNode" />
+              <item name="2.2.facts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aps_olap" type="e2918438:DataGripProjectViewPane$1$1" />
               <item name="aps_olap" type="252d1985:DataGripProjectViewPane$1$1$1" />
               <item name="Mondrian" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,24 +338,24 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="true" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mondrian/tools" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mondrian" />
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Git\DatagripProjects\aps_olap\Mondrian\tools" />
-      <recent name="D:\Git\DatagripProjects\aps_olap\Mondrian\doc" />
-      <recent name="$PROJECT_DIR$/Mondrian" />
-      <recent name="D:\Git\DatagripProjects\aps_olap\Mondrian" />
-      <recent name="D:\Git\DatagripProjects\aps_olap\cubes-aps" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Mondrian" />
       <recent name="$PROJECT_DIR$/Mondrian/others" />
       <recent name="D:\Git\DatagripProjects\aps_olap\2.DataWarehouse\2.2.dw_raw" />
       <recent name="D:\Git\DatagripProjects\aps_olap\2.DataWarehouse\2.2.dw_raw\2.2.1.inventory" />
       <recent name="D:\Git\DatagripProjects\aps_olap\2.DataWarehouse\2.2.dw_raw\dump" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Mondrian" />
+      <recent name="$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\Mondrian\tools" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\Mondrian\doc" />
+      <recent name="D:\Git\DatagripProjects\aps_olap\Mondrian" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,10 +380,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Database" order="0" visible="true" weight="0.17493297" />
+      <window_info content_ui="combo" id="Database" order="0" visible="true" weight="0.17453505" />
       <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Graph Database Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32961586" />
@@ -338,37 +393,36 @@
       <window_info anchor="bottom" id="Database Changes" order="5" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5026846" side_tool="true" weight="0.22895126" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.330855" />
-      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.49731544" weight="0.22727273" />
+      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.49731544" weight="0.622057" />
       <window_info anchor="bottom" id="Debug" order="9" />
       <window_info anchor="bottom" id="SQL Generator" order="10" weight="0.32928476" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.5777126" visible="true" weight="0.19638069" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.4222874" side_tool="true" visible="true" weight="0.19638069" />
+      <window_info anchor="right" id="Graph Database" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.34076828" visible="true" weight="0.34978542" />
+      <window_info anchor="right" id="Structure" order="1" sideWeight="0.6592317" side_tool="true" weight="0.34978542" />
       <window_info anchor="right" id="Key Promoter X" order="2" sideWeight="0.4990758" weight="0.3297568" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Database" order="0" visible="true" weight="0.17453505" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Graph Database Console" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32961586" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32961586" />
+      <window_info anchor="bottom" id="Database Changes" order="6" weight="0.32961586" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026846" side_tool="true" weight="0.22895126" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.330855" />
+      <window_info anchor="bottom" id="Database Console" order="9" sideWeight="0.49731544" weight="0.622057" />
+      <window_info anchor="bottom" id="Debug" order="10" />
+      <window_info anchor="bottom" id="SQL Generator" order="11" weight="0.32928476" />
+      <window_info anchor="right" id="Graph Database" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="1" sideWeight="0.34076828" visible="true" weight="0.34978542" />
+      <window_info anchor="right" id="Structure" order="2" sideWeight="0.6592317" side_tool="true" visible="true" weight="0.34978542" />
+      <window_info anchor="right" id="Key Promoter X" order="3" sideWeight="0.4990758" weight="0.3297568" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/JSON-Groovy.json.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/HTML-JavaScript.html.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/HTML-Groovy.html.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/XML-Groovy.xml.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema.layouts/File per object.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-93" />
@@ -445,29 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/table/fact_inventory_movement">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.fact_inventory_movement.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.1.improve performence.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -658,16 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mondrian/others/foodmart4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="77" selection-start-line="77" selection-end-line="119" selection-end-column="25" />
-          <folding>
-            <element signature="n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#11;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mondrian/tools/license_ubuntu.lic">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -675,10 +696,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/table/fact_inventory_daily_snapshot">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="08627f87-e3ee-4dc7-8746-38573954d189">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/create&amp;load dm_aps.aps_inventory.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="2" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.1.improve performence.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/2.fact_inventory_movement.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/table/fact_inventory_movement">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="08627f87-e3ee-4dc7-8746-38573954d189">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
+        <state relative-caret-position="2895">
+          <caret line="218" column="11" lean-forward="true" selection-start-line="218" selection-start-column="11" selection-end-line="218" selection-end-column="11" />
+          <folding>
+            <element signature="n#Table#0;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Key#0;n#Table#0;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Table#1;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Key#0;n#Table#1;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Table#2;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Key#0;n#Table#2;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#Key#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#ExpressionView#0;n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+            <element signature="n#SQL#0;n#ExpressionView#0;n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#3;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/others/foodmart4.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="579" column="75" selection-start-line="579" selection-start-column="63" selection-end-line="579" selection-end-column="75" />
+          <folding>
+            <element signature="n#CalculatedColumnDef#0;n#ColumnDefs#0;n#Table#11;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.0.fact_ito_tmp.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="12" />
+          <folding>
+            <element signature="e#440#667#0" />
+            <element signature="e#706#932#0" />
+            <element signature="e#971#1292#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.DataWarehouse/2.3.DataMart/2.2.facts/3.fact_ito.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e15b0ed-4e60-4883-997a-75d5b7b8b15c/schema/dm_aps/table/fact_inventory_ito">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="08627f87-e3ee-4dc7-8746-38573954d189">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mondrian/Inventory_Snapshot_v3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
           <folding>
             <element signature="n#PhysicalSchema#0;n#Schema#0;n#!!top" />
             <element signature="n#Table#0;n#PhysicalSchema#0;n#Schema#0;n#!!top" />
@@ -732,16 +851,22 @@
             <element signature="n#Name#0;n#Attribute#2;n#Attributes#0;n#Dimension#5;n#Schema#0;n#!!top" />
             <element signature="n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
             <element signature="n#Hierarchy#0;n#Hierarchies#0;n#Dimension#5;n#Schema#0;n#!!top" />
+            <element signature="n#Cube#0;n#Schema#0;n#!!top" />
+            <element signature="n#Dimensions#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
             <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#0;n#Schema#0;n#!!top" />
-            <element signature="n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
-            <element signature="n#Attributes#0;n#Dimension#3;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#Dimension#0;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#Attributes#0;n#Dimension#0;n#Dimensions#0;n#Cube#1;n#Schema#0;n#!!top" />
             <element signature="n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
             <element signature="n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
             <element signature="n#Measures#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
             <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#1;n#Schema#0;n#!!top" />
+            <element signature="n#Attributes#0;n#Dimension#0;n#Dimensions#0;n#Cube#2;n#Schema#0;n#!!top" />
+            <element signature="n#DimensionLinks#0;n#MeasureGroup#0;n#MeasureGroups#0;n#Cube#2;n#Schema#0;n#!!top" />
           </folding>
         </state>
       </provider>
