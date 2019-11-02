@@ -1,5 +1,5 @@
 cubes==1.0.1
-Flask==0.10.1
+Flask==1.0
 SQLAlchemy==1.0.13
 Django==1.9.6
 argparse==1.2.1
